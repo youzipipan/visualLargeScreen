@@ -1,0 +1,5 @@
+2023-08-22 20:58:49.824 INFO  21196 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Starting PowerGridScreenApplicationTests using Java 1.8.0_111 on S2FDLWC0128 with PID 21196 (started by 71644463 in C:\work\code\2023\wc\power_grid_screen)
+2023-08-22 20:58:49.831 DEBUG 21196 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-08-22 20:58:49.832 INFO  21196 --- [main] com.pg.screen.PowerGridScreenApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-08-22 20:58:49.832 INFO  21196 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-22 20:58:56.220 INFO  21196 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Started PowerGridScreenApplicationTests in 7.065 seconds (JVM running for 9.085)

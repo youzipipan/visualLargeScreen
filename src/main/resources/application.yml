@@ -1,0 +1,37 @@
+server:
+  port: 8001
+
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@114.115.152.117:57641:ORCLCDB
+#    url: jdbc:oracle:thin:@10.161.32.34:57641:ORCLCDB
+    username: C##SHUJUFENXI
+    password: Fmcyehd7OJtznDyC
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 50
+      # 最小空闲连接数量
+      minimum-idle: 20
+      # 空闲连接存活最大时间 默认600000（10分钟）
+      idle-timeout: 9600000
+      # 控制池中连接的最长生命周期 0表示无限生命周期 默认1800000（30分钟）
+      max-lifetime: 0
+      # 数据库连接超时时间 默认30秒（30000）
+      connection-timeout: 10000
+      leak-detection-threshold: 30000
+      allow-pool-suspension: true
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "GET, POST, PUT, DELETE, OPTIONS"
+    allowed-headers: "*"
+    allow-credentials: true
+    max-age: 3600
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com:
+      pg:
+        screen: debug

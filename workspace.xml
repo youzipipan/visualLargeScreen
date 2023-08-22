@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BeansEndpointTabSettings">
+    <option name="showContexts" value="false" />
+    <option name="showDoc" value="false" />
+    <option name="showFiles" value="false" />
+    <option name="showLibraryBeans" value="false" />
+    <option name="showLiveBeansGraph" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04c5a9dd-8c7f-4d6a-8c6e-eca61bab158a" name="更改" comment="代码提交">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/DistributionNetworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/DistributionNetworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/FaultAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/FaultAnalysisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/OperationAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/OperationAnalysisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/WorkerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/controller/WorkerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/ActiveRepairOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/ActiveRepairOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/ActiveRushRepairOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/ActiveRushRepairOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/CircuitBreakerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/CircuitBreakerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/FaultDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/FaultDetailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/FaultIndicatorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/FaultIndicatorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/MediumVoltageAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/MediumVoltageAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/MediumVoltageLineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/MediumVoltageLineDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/OperationMaintenanceOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/OperationMaintenanceOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/RepairsOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/RepairsOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/SwitchStationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/SwitchStationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/SwitchingCabinetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/SwitchingCabinetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/WorkOrderDistributionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/dao/WorkOrderDistributionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/MediumVoltageLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/MediumVoltageLineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/ActiveRepairOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/ActiveRepairOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/ActiveRushRepairOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/ActiveRushRepairOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/CircuitBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/CircuitBreaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/FaultDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/FaultDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/FaultIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/FaultIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/Gzgd95598.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/Gzgd95598.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageLineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/MediumVoltageLineSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/OperationMaintenanceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/OperationMaintenanceOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/SwitchStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/SwitchStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/SwitchingCabinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/mapper/entity/SwitchingCabinet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/model/vo/Xy2DataCountVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/model/vo/Xy2DataCountVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/ActiveRepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/ActiveRepairOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/ActiveRushRepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/ActiveRushRepairOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/DistributionNetworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/DistributionNetworkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/FaultDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/FaultDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/OperationMaintenanceOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/OperationMaintenanceOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/RepairsOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/RepairsOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/WorkOrderDistributionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pg/screen/service/WorkOrderDistributionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pg/screen/DbCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pg/screen/DbCreateTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pg/screen/PowerGridScreenApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pg/screen/PowerGridScreenApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="chuang.chen" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/mybatis-flex/mybatis-flex-codegen/1.3.3/mybatis-flex-codegen-1.3.3-sources.jar!/com/mybatisflex/codegen/config/GlobalConfig.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/oracle/database/jdbc/ojdbc8/21.9.0.0/ojdbc8-21.9.0.0.jar!/oracle/jdbc/OracleDriver.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/oracle/database/jdbc/ojdbc8/21.9.0.0/ojdbc8-21.9.0.0.jar!/oracle/jdbc/datasource/impl/OracleDataSource.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pg/screen/controller/WorkerOrderController.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="zulu-1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2QomslQBEP7M1yACtZ9IGYnLk3p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "chuang.chen2",
+    "last_opened_file_path": "/Users/c.chuang/project/power_grid/power_grid_screen/src/main/java/com/pg/screen/common",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3547893",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "599eba19aa93a929cb8589f148b8a6c4"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/pg/screen/common" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.pg.screen.mapper.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pg.screen" />
+      <recent name="com.pg.screen.common" />
+      <recent name="com.pg.screen.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PowerGridScreenApplication">
+    <configuration name="rest-api_3 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_3.http" requestIdentifier="#1" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="PowerGridScreenApplicationTests.WorkOrderUnitEnumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="power_grid_screen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pg.screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pg.screen" />
+      <option name="MAIN_CLASS_NAME" value="com.pg.screen.PowerGridScreenApplicationTests" />
+      <option name="METHOD_NAME" value="WorkOrderUnitEnumTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerGridScreenApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="power_grid_screen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pg.screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pg.screen" />
+      <option name="MAIN_CLASS_NAME" value="com.pg.screen.PowerGridScreenApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerGridScreenApplicationTests.getWorkOrderDistributionCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="power_grid_screen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pg.screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pg.screen" />
+      <option name="MAIN_CLASS_NAME" value="com.pg.screen.PowerGridScreenApplicationTests" />
+      <option name="METHOD_NAME" value="getWorkOrderDistributionCountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerGridScreenApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="power_grid_screen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pg.screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pg.screen" />
+      <option name="MAIN_CLASS_NAME" value="com.pg.screen.PowerGridScreenApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="power_grid_screen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="power_grid_screen" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowerGridScreenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="power_grid_screen" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pg.screen.PowerGridScreenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PowerGridScreenApplicationTests.test" />
+        <item itemvalue="JUnit.PowerGridScreenApplicationTests.WorkOrderUnitEnumTest" />
+        <item itemvalue="JUnit.PowerGridScreenApplicationTests.getWorkOrderDistributionCountTest" />
+        <item itemvalue="JUnit.PowerGridScreenApplicationTests.contextLoads" />
+        <item itemvalue="HTTP 请求.rest-api_3 | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="04c5a9dd-8c7f-4d6a-8c6e-eca61bab158a" name="更改" comment="" />
+      <created>1686028518872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686028518872</updated>
+      <workItem from="1686028519895" duration="6759000" />
+      <workItem from="1686044985120" duration="32916000" />
+      <workItem from="1686212776307" duration="28755000" />
+      <workItem from="1686534562989" duration="59869000" />
+      <workItem from="1686879254219" duration="55350000" />
+      <workItem from="1687247656023" duration="310000" />
+      <workItem from="1687248009765" duration="36299000" />
+      <workItem from="1687683974837" duration="3982000" />
+      <workItem from="1687745622917" duration="3484000" />
+      <workItem from="1687946440092" duration="731000" />
+      <workItem from="1688118815719" duration="24333000" />
+      <workItem from="1688435399212" duration="2104000" />
+      <workItem from="1688437516827" duration="36851000" />
+    </task>
+    <task id="LOCAL-00001" summary="project init">
+      <created>1686281350195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686281350195</updated>
+    </task>
+    <task id="LOCAL-00002" summary="配网运行分析 配网工单管理 代码提交">
+      <created>1686728289313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686728289313</updated>
+    </task>
+    <task id="LOCAL-00003" summary="配网运行分析 代码提交">
+      <created>1686907446844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686907446844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DistributionNetworkController 更改注释">
+      <created>1687138764205</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687138764205</updated>
+    </task>
+    <task id="LOCAL-00005" summary="代码提交">
+      <created>1687223972378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687223972378</updated>
+    </task>
+    <task id="LOCAL-00006" summary="代码提交">
+      <created>1687242333325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687242333325</updated>
+    </task>
+    <task id="LOCAL-00007" summary="代码提交">
+      <created>1687250105952</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687250105952</updated>
+    </task>
+    <task id="LOCAL-00008" summary="代码提交">
+      <created>1687423285449</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687423285449</updated>
+    </task>
+    <task id="LOCAL-00009" summary="代码提交">
+      <created>1687444616084</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687444616084</updated>
+    </task>
+    <task id="LOCAL-00010" summary="代码提交">
+      <created>1687674469549</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687674469549</updated>
+    </task>
+    <task id="LOCAL-00011" summary="代码提交">
+      <created>1687674551810</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687674551810</updated>
+    </task>
+    <task id="LOCAL-00012" summary="代码提交">
+      <option name="closed" value="true" />
+      <created>1687946697017</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687946697017</updated>
+    </task>
+    <task id="LOCAL-00013" summary="代码提交">
+      <option name="closed" value="true" />
+      <created>1688283641447</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688283641447</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project init" />
+    <MESSAGE value="配网运行分析 配网工单管理 代码提交" />
+    <MESSAGE value="配网运行分析 代码提交" />
+    <MESSAGE value="DistributionNetworkController 更改注释" />
+    <MESSAGE value="代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pg/screen/utils/ToolUtils.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pg/screen/service/RepairsOrderService.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pg/screen/controller/FaultAnalysisController.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pg/screen/service/RepairsOrderService.java</url>
+          <line>285</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pg/screen/service/RepairsOrderService.java</url>
+          <line>306</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="value" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
