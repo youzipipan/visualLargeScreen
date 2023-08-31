@@ -7,7 +7,7 @@ spring:
     url: jdbc:oracle:thin:@114.115.152.117:57641:ORCLCDB
 #    url: jdbc:oracle:thin:@10.161.32.34:57641:ORCLCDB
     username: C##SHUJUFENXI
-    password: Fmcyehd7OJtznDyC
+    password: K82QyGw3YgMUZgfi
     driver-class-name: oracle.jdbc.OracleDriver
     hikari:
       # 连接池最大连接数，默认是10
