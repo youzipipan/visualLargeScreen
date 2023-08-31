@@ -192,11 +192,11 @@ public class DpGdkkxZbDao {
         String sql;
         String sqlFrom = "select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ " +
                 "      from DP_GDKKX_ZB " +
-                "      where SSXQ is null " +
+                "      where (SSXQ is null or SSXQ='大连') " +
                 "        and DQTZ = '市中心+市区+城镇+农村' " +
                 "        and QSSJ >= TO_DATE('" + beginDate + "', 'yyyy-mm-dd') " +
                 "        and ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd') " +
-                "      order by DP_GDKKX_ZB.QSSJ desc, ZZSJ desc";
+                "      order by DP_GDKKX_ZB.QSSJ , ZZSJ desc";
         if (beginDate.isEqual(LocalDate.of(
                 LocalDate.now().getYear(), 1, 1))) {
             sql = "select * from (" + sqlFrom + ") where ROWNUM = 1";
