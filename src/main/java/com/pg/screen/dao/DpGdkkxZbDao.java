@@ -251,11 +251,11 @@ public class DpGdkkxZbDao {
                 " and  ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd') ";
         String whereAnd = "";
         if (type == 0) {
-            whereAnd = " and SSXQ is null";
+            whereAnd = " and (SSXQ is null or SSXQ='大连') and DQTZ='市中心+市区+城镇+农村' ";
         } else if (type == 1) {
-            whereAnd = " and DQTZ = '市中心+市区' ";
+            whereAnd = " and (SSXQ is null or SSXQ='大连') and DQTZ = '市中心+市区' ";
         } else if (type == 2) {
-            whereAnd = " and DQTZ= '城镇+农村' ";
+            whereAnd = " and (SSXQ is null or SSXQ='大连') and DQTZ= '城镇+农村' ";
         }
         sql = sql + whereAnd + " order by QSSJ desc ,ZZSJ desc ";
         String resultSql = "select * from (" + sql + ") where ROWNUM =1";
