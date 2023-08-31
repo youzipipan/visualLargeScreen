@@ -224,6 +224,7 @@ public class DpGdkkxZbDao {
                     "        and DQTZ = '市中心+市区+城镇+农村' " +
                     "        and QSSJ >= TO_DATE('" + beginDate + "', 'yyyy-mm-dd') " +
                     "        and ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd') " +
+                    "      order by DP_GDKKX_ZB.QSSJ desc, ZZSJ desc) " +
                     "      order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) " +
                     "where ROWNUM <= 13";
         } else {
