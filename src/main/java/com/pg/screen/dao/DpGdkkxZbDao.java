@@ -257,7 +257,7 @@ public class DpGdkkxZbDao {
         } else if (type == 2) {
             whereAnd = " and (SSXQ is null or SSXQ='大连') and DQTZ= '城镇+农村' ";
         }
-        sql = sql + whereAnd + " order by QSSJ desc ,ZZSJ desc ";
+        sql = sql + whereAnd + " order by QSSJ  ,ZZSJ  ";
         String resultSql = "select * from (" + sql + ") where ROWNUM =1";
         return Db.selectOneBySql(resultSql);
     }
