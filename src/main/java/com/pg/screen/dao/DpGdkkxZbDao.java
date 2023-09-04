@@ -220,7 +220,7 @@ public class DpGdkkxZbDao {
             sql = "select * " +
                     "from (select SSXQ, " + columns + " " +
                     "      from DP_GDKKX_ZB " +
-                    "      where SSXQ is not null  " +
+                    "      where (SSXQ is not null and SSXQ!='大连')  " +
                     "        and DQTZ = '市中心+市区+城镇+农村' " +
                     "        and QSSJ >= TO_DATE('" + beginDate + "', 'yyyy-mm-dd') " +
                     "        and ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd') " +
@@ -229,7 +229,7 @@ public class DpGdkkxZbDao {
         } else {
             sql = "select SSXQ, " + columns + " " +
                     "from DP_GDKKX_ZB " +
-                    "where SSXQ is not null  " +
+                    "where SSXQ is not null and SSXQ!='大连'  " +
                     "  and DQTZ = '市中心+市区+城镇+农村' " +
                     "  and QSSJ >= TO_DATE('" + beginDate + "', 'yyyy-mm-dd') " +
                     "  and ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd')";
