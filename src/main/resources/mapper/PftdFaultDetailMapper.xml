@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pg.screen.mapper.PftdFaultDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.pg.screen.mapper.dto.PftdFaultDetail">
+        <result column="ID" property="id" />
+        <result column="POWER_FAILURE_LINE_NAME" property="powerFailureLineName" />
+        <result column="CITY_COMPANY" property="cityCompany" />
+        <result column="COUNTY_CORPORATION" property="countyCorporation" />
+        <result column="EVENT_TIME" property="eventTime" />
+        <result column="EVENT_COUNT" property="eventCount" />
+        <result column="EVENT_TYPE" property="eventType" />
+        <result column="IS_NOTIFY" property="isNotify" />
+        <result column="NOTIFY_TIEM" property="notifyTiem" />
+        <result column="NOTIFY_PERSON" property="notifyPerson" />
+        <result column="IS_FORM" property="isForm" />
+        <result column="FORM_TIME" property="formTime" />
+        <result column="FORM_PERSON" property="formPerson" />
+    </resultMap>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="PftdDetailDto" type="com.pg.screen.mapper.dto.PftdDetailDto">
+        <result column="COUNTRYCORPORATION" property="countryCorporation" />
+        <result column="POWERFAILURELINENAME" property="powerFailureLineName" />
+        <result column="EVENTCOUNT" property="eventCount" />
+        <result column="EVENTTIME" property="eventTime" />
+        <collection property="faultDetailList" ofType="com.pg.screen.mapper.entity.FaultDetail">
+            <result column="ID" property="id" />
+            <result column="CREATE_USER" property="createUser" />
+            <result column="CREATE_TIME" property="createTime" />
+            <result column="CITY_COMPANY" property="cityCompany" />
+            <result column="COUNTY_CORPORATION" property="countyCorporation" />
+            <result column="TIMEOUT_CASE" property="timeoutCase" />
+            <result column="EVENT_SEQUENCE_NUMBER" property="eventSequenceNumber" />
+            <result column="EVENT_TIME" property="eventTime" />
+            <result column="RECOVER_ELECTRICITY_TIME" property="recoverElectricityTime" />
+            <result column="SPECIFIC_POWER_FAILURE_NUMBER" property="specificPowerFailureNumber" />
+            <result column="PUBLIC_POWER_FAILURE_NUMBER" property="publicPowerFailureNumber" />
+            <result column="TOTAL_POWER_FAILURE_NUMBER" property="totalPowerFailureNumber" />
+            <result column="TOTAL_USER_NUMBER" property="totalUserNumber" />
+            <result column="POWER_FAILURE_PERCENTAGE" property="powerFailurePercentage" />
+            <result column="REPAIR_TIME" property="repairTime" />
+            <result column="REPORT_STATUS" property="reportStatus" />
+            <result column="POWER_FAILURE_LINE_NAME" property="powerFailureLineName" />
+            <result column="FAULT_TYPE" property="faultType" />
+            <result column="FAULT_CAUSE" property="faultCause" />
+            <result column="FAULT_CAUSE_2_CATEGORY" property="faultCause2Category" />
+            <result column="LINE_MANAGEMENT_ATTRIBUTE" property="lineManagementAttribute" />
+            <result column="LINE_OPERATION_TIME" property="lineOperationTime" />
+            <result column="MANUFACTURER" property="manufacturer" />
+            <result column="CHANGE_MANUFACTURER" property="changeManufacturer" />
+            <result column="POWER_FAILURE_SITE" property="powerFailureSite" />
+            <result column="FAULT_SITUATION" property="faultSituation" />
+            <result column="TROUBLESHOOTING_PROCESS_AND_CAUSE" property="troubleshootingProcessAndCause" />
+            <result column="NEXT_STEP" property="nextStep" />
+            <result column="REPORTING_TIME" property="reportingTime" />
+            <result column="AUDIT_TIME" property="auditTime" />
+            <result column="MARKER_STATE" property="markerState" />
+        </collection>
+    </resultMap>
+
+
+    <resultMap id="FaultDetail" type="com.pg.screen.mapper.dto.PftdDetailDto">
+        <result column="ID" property="id" />
+        <result column="CREATE_USER" property="createUser" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CITY_COMPANY" property="cityCompany" />
+        <result column="COUNTY_CORPORATION" property="countyCorporation" />
+        <result column="TIMEOUT_CASE" property="timeoutCase" />
+        <result column="EVENT_SEQUENCE_NUMBER" property="eventSequenceNumber" />
+        <result column="EVENT_TIME" property="eventTime" />
+        <result column="RECOVER_ELECTRICITY_TIME" property="recoverElectricityTime" />
+        <result column="SPECIFIC_POWER_FAILURE_NUMBER" property="specificPowerFailureNumber" />
+        <result column="PUBLIC_POWER_FAILURE_NUMBER" property="publicPowerFailureNumber" />
+        <result column="TOTAL_POWER_FAILURE_NUMBER" property="totalPowerFailureNumber" />
+        <result column="TOTAL_USER_NUMBER" property="totalUserNumber" />
+        <result column="POWER_FAILURE_PERCENTAGE" property="powerFailurePercentage" />
+        <result column="REPAIR_TIME" property="repairTime" />
+        <result column="REPORT_STATUS" property="reportStatus" />
+        <result column="POWER_FAILURE_LINE_NAME" property="powerFailureLineName" />
+        <result column="FAULT_TYPE" property="faultType" />
+        <result column="FAULT_CAUSE" property="faultCause" />
+        <result column="FAULT_CAUSE_2_CATEGORY" property="faultCause2Category" />
+        <result column="LINE_MANAGEMENT_ATTRIBUTE" property="lineManagementAttribute" />
+        <result column="LINE_OPERATION_TIME" property="lineOperationTime" />
+        <result column="MANUFACTURER" property="manufacturer" />
+        <result column="CHANGE_MANUFACTURER" property="changeManufacturer" />
+        <result column="POWER_FAILURE_SITE" property="powerFailureSite" />
+        <result column="FAULT_SITUATION" property="faultSituation" />
+        <result column="TROUBLESHOOTING_PROCESS_AND_CAUSE" property="troubleshootingProcessAndCause" />
+        <result column="NEXT_STEP" property="nextStep" />
+        <result column="REPORTING_TIME" property="reportingTime" />
+        <result column="AUDIT_TIME" property="auditTime" />
+        <result column="MARKER_STATE" property="markerState" />
+        <result column="EVENTTIMESTR" property="eventTimeStr" />
+        <result column="RECOVERELECTRICITYTIMESTR" property="recoverElectricityTimeStr" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        POWER_FAILURE_LINE_NAME, CITY_COMPANY, COUNTY_CORPORATION, EVENT_TIME, EVENT_COUNT, EVENT_TYPE, IS_NOTIFY, NOTIFY_TIEM, NOTIFY_PERSON, IS_FORM, FORM_TIME, FORM_PERSON
+    </sql>
+
+    <resultMap id="exportMap" type="com.pg.screen.mapper.dto.PftdDetailDto">
+        <result column="ID" property="id" />
+        <result column="COUNTY_CORPORATION" property="countryCorporation" />
+        <result column="EVENT_COUNT" property="eventCount" />
+        <result column="PFTD_EVENT_TIME" property="eventTime" />
+        <result column="POWER_FAILURE_LINE_NAME" property="powerFailureLineName" />
+        <collection property="faultDetailList" ofType="com.pg.screen.mapper.entity.FaultDetail">
+            <result column="EVENT_TIME" property="eventTime" />
+            <result column="RECOVER_ELECTRICITY_TIME" property="recoverElectricityTime" />
+            <result column="FAULT_TYPE" property="faultType" />
+            <result column="FAULT_CAUSE" property="faultCause" />
+            <result column="FAULT_CAUSE_2_CATEGORY" property="faultCause2Category" />
+            <result column="POWER_FAILURE_SITE" property="powerFailureSite" />
+            <result column="FAULT_SITUATION" property="faultSituation" />
+            <result column="TROUBLESHOOTING_PROCESS_AND_CAUSE" property="troubleshootingProcessAndCause" />
+            <result column="NEXT_STEP" property="nextStep" />
+        </collection>
+    </resultMap>
+
+
+
+    <select id="getpage" resultMap="PftdDetailDto">
+        WITH AA AS (SELECT * FROM FAULT_DETAIL
+        <where>
+            <if test="queryParams.countyCorporation != null and queryParams.countyCorporation !=''">
+                AND COUNTY_CORPORATION = #{queryParams.countyCorporation}
+            </if>
+            <if test="queryParams.faultType != null and queryParams.faultType.size() > 0">
+                AND
+                <foreach collection="queryParams.faultType" index="index"  item="faultType" open="(" separator="OR" close=")">
+                    FAULT_TYPE = #{faultType}
+                </foreach>
+            </if>
+            <if test="queryParams.countyCorporationList != null and queryParams.countyCorporationList.size() > 0">
+                AND
+                <foreach collection="queryParams.countyCorporationList" index="index"  item="countyCorporation" open="(" separator="OR" close=")">
+                    COUNTY_CORPORATION = #{countyCorporation}
+                </foreach>
+            </if>
+            <if test="queryParams.eventTimeStartData!=null">
+                AND TO_CHAR(EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.eventTimeStartData, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.eventTimeEndData!=null">
+                AND TO_CHAR(EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.eventTimeEndData, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        )
+        SELECT ROWNUM,T.* FROM (
+        SELECT COUNTY_CORPORATION AS COUNTRYCORPORATION,
+               POWER_FAILURE_LINE_NAME AS POWERFAILURELINENAME,
+                COUNT(*) EVENTCOUNT
+          FROM AA
+
+          GROUP BY COUNTY_CORPORATION,POWER_FAILURE_LINE_NAME
+        ) T
+        <where>
+            <if test="queryParams.eventType != null and queryParams.eventType !=''">
+                AND T.EVENTCOUNT >=#{queryParams.eventType}
+            </if>
+        </where>
+    </select>
+
+    <select id="getpageDetail" resultMap="FaultDetail">
+        WITH AA AS (SELECT * FROM FAULT_DETAIL
+        <where>
+            <if test="queryParams.countyCorporation != null and queryParams.countyCorporation !=''">
+                AND COUNTY_CORPORATION = #{queryParams.countyCorporation}
+            </if>
+            <if test="queryParams.powerfailurelinename != null and queryParams.powerfailurelinename !=''">
+                AND POWER_FAILURE_LINE_NAME = #{queryParams.powerfailurelinename}
+            </if>
+            <if test="queryParams.faultType != null and queryParams.faultType.size() > 0">
+                AND
+                <foreach collection="queryParams.faultType" index="index"  item="faultType" open="(" separator="OR" close=")">
+                    FAULT_TYPE = #{faultType}
+                </foreach>
+            </if>
+            <if test="queryParams.countyCorporationList != null and queryParams.countyCorporationList.size() > 0">
+                AND
+                <foreach collection="queryParams.countyCorporationList" index="index"  item="countyCorporation" open="(" separator="OR" close=")">
+                    COUNTY_CORPORATION = #{countyCorporation}
+                </foreach>
+            </if>
+            <if test="queryParams.eventTimeStartData!=null">
+                AND TO_CHAR(EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.eventTimeStartData, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.eventTimeEndData!=null">
+                AND TO_CHAR(EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.eventTimeEndData, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        )
+        SELECT T.*,TO_CHAR(t.EVENT_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as EVENTTIMESTR,TO_CHAR(t.RECOVER_ELECTRICITY_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as RECOVERELECTRICITYTIMESTR
+          FROM AA T
+          order by T.EVENT_TIME DESC
+    </select>
+
+</mapper>

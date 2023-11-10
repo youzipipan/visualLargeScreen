@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pg.screen.mapper.BxgzfxbMapper">
+
+    <resultMap id="BaseResultMap" type="com.pg.screen.mapper.dto.Gzgd95598">
+        <!--@Table GZGD95598-->
+        <result property="id" column="ID" />
+        <result property="gdbh" column="GDBH" />
+        <result property="gwgdbh" column="GWGDBH" />
+        <result property="ssds" column="SSDS" />
+        <result property="gddw" column="GDDW" />
+        <result property="gzdz" column="GZDZ" />
+        <result property="slsj" column="SLSJ" />
+        <result property="gzms" column="GZMS" />
+        <result property="gzlx" column="GZLX" />
+        <result property="yhbh" column="YHBH" />
+        <result property="khbhht" column="KHBHHT" />
+        <result property="khbh" column="KHBH" />
+        <result property="yhxx" column="YHXX" />
+        <result property="yhlx" column="YHLX" />
+        <result property="sfmgyh" column="SFMGYH" />
+        <result property="sfcs" column="SFCS" />
+        <result property="gdly" column="GDLY" />
+        <result property="qxry" column="QXRY" />
+        <result property="qxcl" column="QXCL" />
+        <result property="qxbz" column="QXBZ" />
+        <result property="clqk" column="CLQK" />
+        <result property="zpjl" column="ZPJL" />
+        <result property="hdry" column="HDRY" />
+        <result property="gdzt" column="GDZT" />
+        <result property="appzt" column="APPZT" />
+        <result property="sfzd" column="SFZD" />
+        <result property="zdbh" column="ZDBH" />
+        <result property="pgysfz" column="PGYSFZ" />
+        <result property="ssxl" column="SSXL" />
+        <result property="sstq" column="SSTQ" />
+        <result property="ddxcscfz" column="DDXCSCFZ" />
+        <result property="gzxfscfz" column="GZXFSCFZ" />
+        <result property="gdsj" column="GDSJ" />
+        <result property="qxxcjl" column="QXXCJL" />
+        <result property="ypjg" column="YPJG" />
+        <result property="gzdl" column="GZDL" />
+        <result property="gzxly" column="GZXLY" />
+        <result property="gzxle" column="GZXLE" />
+        <result property="gzyydl" column="GZYYDL" />
+        <result property="gzyyxl" column="GZYYXL" />
+        <result property="sfdb" column="SFDB" />
+        <result property="xcfl" column="XCFL" />
+        <result property="sbcqsx" column="SBCQSX" />
+    </resultMap>
+
+
+
+    <resultMap id="BxgzfxbPrintTotalDtoMap" type="com.pg.screen.mapper.dto.BxgzfxbPrintTotalDto">
+        <!--@Table GZGD95598-->
+        <result property="rownum" column="ROWNUM" />
+        <result property="gddw" column="GDDW" />
+        <result property="gygznum" column="GYGZNUM" />
+        <result property="dynum" column="DYNUM" />
+        <result property="dnzlnum" column="DNZLNUM" />
+        <result property="fdlnum" column="FDLNUM" />
+        <result property="jlgznum" column="JLGZNUM" />
+        <result property="tdcxnum" column="TDCXNUM" />
+        <result property="qtnum" column="QTNUM" />
+        <result property="bxhjnum" column="BXHJNUM" />
+        <result property="mswhbxl" column="MSWHBXL" />
+        <result property="gdswhbxl" column="GDSWHBXL" />
+        <result property="pjddxcscfz" column="PJDDXCSCFZ" />
+        <result property="pjgzxfscfz" column="PJGZXFSCFZ" />
+    </resultMap>
+
+
+
+
+    <!--导出统计-->
+    <select id="getPrintTotal" resultMap="BxgzfxbPrintTotalDtoMap">
+        WITH AA AS (SELECT * FROM GZGD95598
+        <where>
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    GDDW = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    GZLX = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    GZYYDL = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        )
+        select ROWNUM,ROUND(BXHJNUM/GDSWHBXL,3) as MSWHBXL,
+               ta.*
+         from(
+                select
+                 GDDW,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='高压故障' AND t.GDDW=AA.GDDW) as GYGZNUM,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='低压故障' AND t.GDDW=AA.GDDW) as DYNUM,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='电能质量' AND t.GDDW=AA.GDDW) as DNZLNUM,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='非电力故障' AND t.GDDW=AA.GDDW) as FDLNUM,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='计量故障' AND t.GDDW=AA.GDDW) as JLGZNUM,
+                (SELECT COUNT(*) FROM AA t WHERE t.GZDL='停电查询' AND t.GDDW=AA.GDDW) as TDCXNUM,
+                (SELECT COUNT(*) FROM AA t WHERE (t.GZDL='其他' or t.GZDL NOT IN ('高压故障','低压故障','电能质量','非电力故障','计量故障','停电查询','其他')) AND t.GDDW=AA.GDDW) as QTNUM,
+                (SELECT COUNT(*) FROM AA t WHERE 1=1 AND t.GDDW=AA.GDDW) as BXHJNUM,
+                (SELECT SUM(GDSWHBXL) FROM GZGD95598_GDSWH t WHERE 1=1 AND t.GDDW=AA.GDDW) as GDSWHBXL
+                from AA GROUP BY GDDW
+                ) ta
+
+    </select>
+
+
+
+
+</mapper>
+

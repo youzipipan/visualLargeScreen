@@ -5,6 +5,8 @@ import com.pg.screen.common.HttpResult;
 import com.pg.screen.dao.FaultDetailDao;
 import com.pg.screen.dao.OperationMaintenanceOrderDao;
 import com.pg.screen.enums.WorkOrderUnitEnum;
+import com.pg.screen.mapper.GddwXlcdMapper;
+import com.pg.screen.mapper.dto.GddwXlcd;
 import com.pg.screen.model.vo.*;
 import com.pg.screen.utils.ToolUtils;
 
@@ -12,6 +14,7 @@ import javax.annotation.Resource;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -38,6 +41,9 @@ public class FaultDetailService {
 
     @Resource
     private OperationMaintenanceOrderDao operationMaintenanceOrderDao;
+
+    @Autowired
+    private GddwXlcdMapper gddwXlcdMapper;
 
     /**
      * 线路故障分析-获取故障数量
@@ -273,6 +279,7 @@ public class FaultDetailService {
         String name;
         BigDecimal value;
         BigDecimal total = BigDecimal.ZERO;
+        BigDecimal total_long = BigDecimal.ZERO;
         int count = 1;
         Map<String, BigDecimal> map = new HashMap<>();
         for (Row row : rowList) {
@@ -283,55 +290,68 @@ public class FaultDetailService {
             switch (name) {
                 case "中山供电分公司":
                     map.put(
-                            "中山", value.divide(getLineLength().get("zs"), 4, RoundingMode.HALF_UP));
+                            "中山", value.divide(getLineLength().get("中山供电分公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("中山供电分公司"));
                     break;
                 case "沙河口供电分公司":
                     map.put(
-                            "沙河口", value.divide(getLineLength().get("shk"), 4, RoundingMode.HALF_UP));
+                            "沙河口", value.divide(getLineLength().get("沙河口供电分公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("沙河口供电分公司"));
                     break;
                 case "甘井子供电分公司":
                     map.put(
-                            "甘井子", value.divide(getLineLength().get("gjz"), 4, RoundingMode.HALF_UP));
+                            "甘井子", value.divide(getLineLength().get("甘井子供电分公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("甘井子供电分公司"));
                     break;
                 case "高新园区供电分公司":
                     map.put(
-                            "高新", value.divide(getLineLength().get("gx"), 4, RoundingMode.HALF_UP));
+                            "高新", value.divide(getLineLength().get("高新园区供电分公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("高新园区供电分公司"));
                     break;
                 case "国网大连市金州新区供电公司":
                     map.put(
-                            "金州", value.divide(getLineLength().get("jz"), 4, RoundingMode.HALF_UP));
+                            "金州", value.divide(getLineLength().get("国网大连市金州新区供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网大连市金州新区供电公司"));
                     break;
                 case "国网大连市开发区东部供电公司":
                     map.put(
-                            "开东", value.divide(getLineLength().get("kd"), 4, RoundingMode.HALF_UP));
+                            "开东", value.divide(getLineLength().get("国网大连市开发区东部供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网大连市开发区东部供电公司"));
                     break;
                 case "国网大连市开发区供电公司":
                     map.put(
-                            "开发区", value.divide(getLineLength().get("kfq"), 4, RoundingMode.HALF_UP));
+                            "开发区", value.divide(getLineLength().get("国网大连市开发区供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网大连市开发区供电公司"));
                     break;
                 case "国网大连市旅顺口区供电公司":
                     map.put(
-                            "旅顺", value.divide(getLineLength().get("ls"), 4, RoundingMode.HALF_UP));
+                            "旅顺", value.divide(getLineLength().get("国网大连市旅顺口区供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网大连市旅顺口区供电公司"));
                     break;
                 case "国网瓦房店市供电公司":
                     map.put(
-                            "瓦房店", value.divide(getLineLength().get("wfd"), 4, RoundingMode.HALF_UP));
+                            "瓦房店", value.divide(getLineLength().get("国网瓦房店市供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网瓦房店市供电公司"));
                     break;
                 case "国网普兰店市供电公司":
                     map.put(
-                            "普兰店", value.divide(getLineLength().get("pld"), 4, RoundingMode.HALF_UP));
+                            "普兰店", value.divide(getLineLength().get("国网普兰店市供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网普兰店市供电公司"));
                     break;
                 case "国网庄河市供电公司":
                     map.put(
-                            "庄河", value.divide(getLineLength().get("zh"), 4, RoundingMode.HALF_UP));
+                            "庄河", value.divide(getLineLength().get("国网庄河市供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网庄河市供电公司"));
                     break;
                 case "国网长海县供电公司":
                     map.put(
-                            "长海", value.divide(getLineLength().get("ch"), 4, RoundingMode.HALF_UP));
+                            "长海", value.divide(getLineLength().get("国网长海县供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网长海县供电公司"));
                     break;
                 case "国网大连市长兴岛临港工业区供电公司":
                     map.put(
-                            "长兴岛", value.divide(getLineLength().get("cxd"), 4, RoundingMode.HALF_UP));
+                            "长兴岛", value.divide(getLineLength().get("国网大连市长兴岛临港工业区供电公司"), 4, RoundingMode.HALF_UP));
+                    total_long = total_long.add(getLineLength().get("国网大连市长兴岛临港工业区供电公司"));
                     break;
             }
         }
@@ -351,25 +371,32 @@ public class FaultDetailService {
         }
         XyDataBigDecimalVo vo = new XyDataBigDecimalVo(
                 WorkOrderUnitEnum.getShortName(), yAxisValuesList);
-        vo.setTotal(total.divide(BigDecimal.valueOf(count), 4, RoundingMode.HALF_UP));
+//        vo.setTotal(total.divide(BigDecimal.valueOf(count), 4, RoundingMode.HALF_UP));
+        //2023-11-06
+        vo.setTotal(total.divide(total_long, 4, RoundingMode.HALF_UP));
+        //总次数，除以总长度修改
         return new HttpResult<XyDataBigDecimalVo>().success(vo);
     }
 
     private Map<String, BigDecimal> getLineLength() {
         Map<String, BigDecimal> resultMap = new HashMap<>();
-        resultMap.put("zs", BigDecimal.valueOf(10.59828));
-        resultMap.put("shk", BigDecimal.valueOf(8.27639));
-        resultMap.put("gjz", BigDecimal.valueOf(18.81839));
-        resultMap.put("gx", BigDecimal.valueOf(21.4854));
-        resultMap.put("jz", BigDecimal.valueOf(39.6035));
-        resultMap.put("ls", BigDecimal.valueOf(18.22568));
-        resultMap.put("wfd", BigDecimal.valueOf(42.03));
-        resultMap.put("pld", BigDecimal.valueOf(33.5168));
-        resultMap.put("zh", BigDecimal.valueOf(41.26));
-        resultMap.put("kfq", BigDecimal.valueOf(9.12875));
-        resultMap.put("kd", BigDecimal.valueOf(16.5553));
-        resultMap.put("cxd", BigDecimal.valueOf(9.3558));
-        resultMap.put("ch", BigDecimal.valueOf(5.343834));
+        List<GddwXlcd> gddwXlcdList=gddwXlcdMapper.getpage();
+        for(GddwXlcd item:gddwXlcdList){
+            resultMap.put(item.getGddw(), BigDecimal.valueOf(Long.parseLong(item.getXlcd())));
+        }
+//        resultMap.put("zs", BigDecimal.valueOf(10.59828));
+//        resultMap.put("shk", BigDecimal.valueOf(8.27639));
+//        resultMap.put("gjz", BigDecimal.valueOf(18.81839));
+//        resultMap.put("gx", BigDecimal.valueOf(21.4854));
+//        resultMap.put("jz", BigDecimal.valueOf(39.6035));
+//        resultMap.put("ls", BigDecimal.valueOf(18.22568));
+//        resultMap.put("wfd", BigDecimal.valueOf(42.03));
+//        resultMap.put("pld", BigDecimal.valueOf(33.5168));
+//        resultMap.put("zh", BigDecimal.valueOf(41.26));
+//        resultMap.put("kfq", BigDecimal.valueOf(9.12875));
+//        resultMap.put("kd", BigDecimal.valueOf(16.5553));
+//        resultMap.put("cxd", BigDecimal.valueOf(9.3558));
+//        resultMap.put("ch", BigDecimal.valueOf(5.343834));
         return resultMap;
     }
 

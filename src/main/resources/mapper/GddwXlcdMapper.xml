@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pg.screen.mapper.GddwXlcdMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.pg.screen.mapper.dto.GddwXlcd">
+        <result column="GDDW" property="gddw" />
+        <result column="XLCD" property="xlcd" />
+
+    </resultMap>
+
+
+    <!--重点关注故障分析-->
+    <select id="getpage" resultMap="BaseResultMap">
+        SELECT *
+        FROM GDDW_XLCD
+
+    </select>
+
+
+
+
+</mapper>
+

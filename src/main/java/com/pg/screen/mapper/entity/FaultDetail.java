@@ -37,7 +37,7 @@ public class FaultDetail implements Serializable {
     /**
      * 事件序号
      */
-    private Integer eventSequenceNumber;
+    private Long eventSequenceNumber;
     /**
      * 事件时间
      */

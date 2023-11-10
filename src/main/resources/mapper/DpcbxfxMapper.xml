@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pg.screen.mapper.DpcbxfxMapper">
+
+    <resultMap id="BaseResultMap" type="com.pg.screen.mapper.dto.DpcbxfxDto">
+        <!--@Table GZGD95598-->
+        <result property="gddw" column="GDDW" />
+        <result property="name" column="SSXL" />
+        <result property="num" column="NUM" />
+    </resultMap>
+
+
+
+
+    <!--查询列表-线路多频次报修-->
+    <select id="getssxlpage" resultMap="BaseResultMap">
+
+        WITH AA AS (SELECT GDDW AS GDDW, SSXL,COUNT(SSXL) AS NUM FROM GZGD95598
+        <where>
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    GDDW = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    GZLX = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    GZYYDL = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        GROUP BY GDDW,SSXL)
+        SELECT *
+         FROM AA ORDER BY NUM DESC
+
+    </select>
+
+
+    <!--查询列表-台区多频次报修-->
+    <select id="getsstqpage" resultMap="BaseResultMap">
+        WITH AA AS (SELECT GDDW AS GDDW, SSTQ AS SSXL,COUNT(SSTQ) AS NUM FROM GZGD95598
+        <where>
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    GDDW = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    GZLX = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    GZYYDL = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        GROUP BY GDDW,SSTQ)
+        SELECT *
+        FROM AA ORDER BY NUM DESC
+    </select>
+
+
+    <!--查询列表-站所重复报修-->
+    <select id="getsszspage" resultMap="BaseResultMap">
+        WITH AA AS (SELECT GDDW AS GDDW, QXBZ AS SSXL,COUNT(QXBZ) AS NUM FROM GZGD95598
+        <where>
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    GDDW = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    GZLX = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    GZYYDL = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(SLSJ, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        GROUP BY GDDW,QXBZ)
+        SELECT *
+        FROM AA ORDER BY NUM DESC
+    </select>
+
+
+
+
+</mapper>
+

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pg.screen.mapper.ZdgzgzfxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.pg.screen.mapper.dto.ZdgzgzfxDto">
+        <result column="ROWNUM" property="rownum" />
+        <result column="ID" property="id" />
+        <result column="CREATE_USER" property="createUser" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CITY_COMPANY" property="cityCompany" />
+        <result column="COUNTY_CORPORATION" property="countyCorporation" />
+        <result column="TIMEOUT_CASE" property="timeoutCase" />
+        <result column="EVENT_SEQUENCE_NUMBER" property="eventSequenceNumber" />
+        <result column="EVENT_TIME" property="eventTime" />
+        <result column="RECOVER_ELECTRICITY_TIME" property="recoverElectricityTime" />
+        <result column="SPECIFIC_POWER_FAILURE_NUMBER" property="specificPowerFailureNumber" />
+        <result column="PUBLIC_POWER_FAILURE_NUMBER" property="publicPowerFailureNumber" />
+        <result column="TOTAL_POWER_FAILURE_NUMBER" property="totalPowerFailureNumber" />
+        <result column="TOTAL_USER_NUMBER" property="totalUserNumber" />
+        <result column="POWER_FAILURE_PERCENTAGE" property="powerFailurePercentage" />
+        <result column="REPAIR_TIME" property="repairTime" />
+        <result column="REPORT_STATUS" property="reportStatus" />
+        <result column="POWER_FAILURE_LINE_NAME" property="powerFailureLineName" />
+        <result column="FAULT_TYPE" property="faultType" />
+        <result column="FAULT_CAUSE" property="faultCause" />
+        <result column="FAULT_CAUSE_2_CATEGORY" property="faultCause2Category" />
+        <result column="LINE_MANAGEMENT_ATTRIBUTE" property="lineManagementAttribute" />
+        <result column="LINE_OPERATION_TIME" property="lineOperationTime" />
+        <result column="MANUFACTURER" property="manufacturer" />
+        <result column="CHANGE_MANUFACTURER" property="changeManufacturer" />
+        <result column="POWER_FAILURE_SITE" property="powerFailureSite" />
+        <result column="FAULT_SITUATION" property="faultSituation" />
+        <result column="TROUBLESHOOTING_PROCESS_AND_CAUSE" property="troubleshootingProcessAndCause" />
+        <result column="NEXT_STEP" property="nextStep" />
+        <result column="REPORTING_TIME" property="reportingTime" />
+        <result column="AUDIT_TIME" property="auditTime" />
+        <result column="MARKER_STATE" property="markerState" />
+        <result column="LINE_NAME" property="lingName" />
+        <result column="INSPECTION_COMPLETION_TIME" property="inspectionCompletionTime" />
+        <result column="RECEIPT_CONTENT" property="receiptContent" />
+        <result column="EVENTTIMESTR" property="eventTimeStr" />
+        <result column="INSPECTIONCOMPLETIONTIMESTR" property="inspectionCompletionTimeStr" />
+        <result column="SCTIME" property="scTime" />
+    </resultMap>
+
+
+    <!--重点关注故障分析-->
+    <select id="getpage" resultMap="BaseResultMap">
+        SELECT ROWNUM,
+               t.*,
+               TO_CHAR(t.EVENT_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as EVENTTIMESTR,
+               TO_CHAR(t.INSPECTION_COMPLETION_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as INSPECTIONCOMPLETIONTIMESTR,
+               TO_CHAR(t.SC_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as SCTIME
+        FROM FAULT_DETAIL_ZDGZ t
+        <where>
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    t.COUNTY_CORPORATION = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    t.FAULT_TYPE = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    t.FAULT_CAUSE = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(t.SC_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(t.SC_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+    </select>
+
+
+    <!--生成数据-->
+    <insert id="createData" >
+        INSERT INTO FAULT_DETAIL_ZDGZ(
+        CREATE_USER,
+        CREATE_TIME,
+        CITY_COMPANY,
+        COUNTY_CORPORATION,
+        TIMEOUT_CASE,
+        EVENT_SEQUENCE_NUMBER,
+        EVENT_TIME,
+        RECOVER_ELECTRICITY_TIME,
+        SPECIFIC_POWER_FAILURE_NUMBER,
+        PUBLIC_POWER_FAILURE_NUMBER,
+        TOTAL_POWER_FAILURE_NUMBER,
+        TOTAL_USER_NUMBER,
+        POWER_FAILURE_PERCENTAGE,
+        REPAIR_TIME,
+        REPORT_STATUS,
+        POWER_FAILURE_LINE_NAME,
+        FAULT_TYPE,
+        FAULT_CAUSE,
+        FAULT_CAUSE_2_CATEGORY,
+        LINE_MANAGEMENT_ATTRIBUTE,
+        LINE_OPERATION_TIME,
+        MANUFACTURER,
+        CHANGE_MANUFACTURER,
+        POWER_FAILURE_SITE,
+        FAULT_SITUATION,
+        TROUBLESHOOTING_PROCESS_AND_CAUSE,
+        NEXT_STEP,
+        REPORTING_TIME,
+        AUDIT_TIME,
+        MARKER_STATE,
+        LINE_NAME,
+        INSPECTION_COMPLETION_TIME,
+        RECEIPT_CONTENT,
+        SC_TIME
+        )
+        SELECT  t.CREATE_USER,
+                t.CREATE_TIME,
+                t.CITY_COMPANY,
+                t.COUNTY_CORPORATION,
+                t.TIMEOUT_CASE,
+                t.EVENT_SEQUENCE_NUMBER,
+                t.EVENT_TIME,
+                t.RECOVER_ELECTRICITY_TIME,
+                t.SPECIFIC_POWER_FAILURE_NUMBER,
+                t.PUBLIC_POWER_FAILURE_NUMBER,
+                t.TOTAL_POWER_FAILURE_NUMBER,
+                t.TOTAL_USER_NUMBER,
+                t.POWER_FAILURE_PERCENTAGE,
+                t.REPAIR_TIME,
+                t.REPORT_STATUS,
+                t.POWER_FAILURE_LINE_NAME,
+                t.FAULT_TYPE,
+                t.FAULT_CAUSE,
+                t.FAULT_CAUSE_2_CATEGORY,
+                t.LINE_MANAGEMENT_ATTRIBUTE,
+                t.LINE_OPERATION_TIME,
+                t.MANUFACTURER,
+                t.CHANGE_MANUFACTURER,
+                t.POWER_FAILURE_SITE,
+                t.FAULT_SITUATION,
+                t.TROUBLESHOOTING_PROCESS_AND_CAUSE,
+                t.NEXT_STEP,
+                t.REPORTING_TIME,
+                t.AUDIT_TIME,
+                t.MARKER_STATE,
+                ta.LINE_NAME,
+                tc.INSPECTION_COMPLETION_TIME,
+                tc.RECEIPT_CONTENT,
+                t.EVENT_TIME as SC_TIME
+        FROM FAULT_DETAIL t
+        LEFT JOIN MEDIUM_VOLTAGE_LINE ta
+        ON  REGEXP_SUBSTR(t.POWER_FAILURE_LINE_NAME, '10千伏(.+)') =ta.DISTRIBUTION_NETWORK_LINE
+        LEFT JOIN (SELECT RECEIPT_CONTENT,WIRING_NAME,MAX(INSPECTION_COMPLETION_TIME) AS INSPECTION_COMPLETION_TIME FROM INSPECTION_HISTORY_CONTROL tb
+        <where>
+            AND tb.INSPECTION_COMPLETION_TIME is NOT NULL
+            <if test="queryParams.tjDate==null">
+                AND TO_CHAR(tb.INSPECTION_COMPLETION_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(TRUNC(SYSDATE) - 30,'YYYYMMDD' )
+                AND TO_CHAR(tb.INSPECTION_COMPLETION_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(SYSDATE, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.tjDate!=null">
+                AND TO_CHAR(tb.INSPECTION_COMPLETION_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(TRUNC(#{queryParams.tjDate, jdbcType=TIMESTAMP})-30, 'YYYYMMDD' )
+                AND TO_CHAR(tb.INSPECTION_COMPLETION_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.tjDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+        GROUP BY tb.RECEIPT_CONTENT,tb.WIRING_NAME) tc ON REGEXP_REPLACE(tc.WIRING_NAME, '\[([^]]+)\]','')=TA.LINE_NAME
+        <where>
+            tc.INSPECTION_COMPLETION_TIME IS NOT NULL
+            <if test="queryParams.GDDW != null and queryParams.GDDW.size() > 0">
+                AND
+                <foreach collection="queryParams.GDDW" index="index" item="GDDW" open="(" separator="OR" close=")">
+                    t.COUNTY_CORPORATION = #{GDDW}
+                </foreach>
+            </if>
+            <if test="queryParams.GZLX != null and queryParams.GZLX.size() > 0">
+                AND
+                <foreach collection="queryParams.GZLX" index="index"  item="GZLX" open="(" separator="OR" close=")">
+                    t.FAULT_TYPE = #{GZLX}
+                </foreach>
+            </if>
+            <if test="queryParams.GZYYDL != null and queryParams.GZYYDL.size() > 0">
+                AND
+                <foreach collection="queryParams.GZYYDL" index="index"  item="GZYYDL" open="(" separator="OR" close=")">
+                    t.FAULT_CAUSE = #{GZYYDL}
+                </foreach>
+            </if>
+            <if test="queryParams.startDate!=null">
+                AND TO_CHAR(t.EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ >= ]]> TO_CHAR(#{queryParams.startDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.endDate!=null">
+                AND TO_CHAR(t.EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ <= ]]> TO_CHAR(#{queryParams.endDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+            <if test="queryParams.tjDate!=null">
+                AND TO_CHAR(t.EVENT_TIME, 'YYYYMMDD' ) <![CDATA[ = ]]> TO_CHAR(#{queryParams.tjDate, jdbcType=TIMESTAMP}, 'YYYYMMDD' )
+            </if>
+        </where>
+    </insert>
+
+</mapper>
+
