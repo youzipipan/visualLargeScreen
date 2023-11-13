@@ -1,6 +1,7 @@
 package com.pg.screen.mapper.dto;
 
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 import java.util.List;
@@ -22,9 +23,11 @@ public class BxgzfxbParam extends BasePageQuery {
     /**
      * 发生时间起
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date startDate;
     /**
      * 发生时间结束
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endDate;
 }
