@@ -39,7 +39,10 @@ public class BxgzfxbServiceImpl  implements IBxgzfxbService {
         List<BxgzfxbPrintTotalDto> vo = bxgzfxbMapper.getPrintTotal(null,queryParams);
         BigDecimal mswhbxl=new BigDecimal(0);
         for(BxgzfxbPrintTotalDto item:vo){
-            mswhbxl=mswhbxl.add(BigDecimal.valueOf(item.getMswhbxl()));
+            if(item.getMswhbxl()!=null){
+                mswhbxl=mswhbxl.add(BigDecimal.valueOf(item.getMswhbxl()));
+            }
+
         }
         return mswhbxl.toString();
 

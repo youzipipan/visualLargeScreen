@@ -382,7 +382,7 @@ public class FaultDetailService {
         Map<String, BigDecimal> resultMap = new HashMap<>();
         List<GddwXlcd> gddwXlcdList=gddwXlcdMapper.getpage();
         for(GddwXlcd item:gddwXlcdList){
-            resultMap.put(item.getGddw(), BigDecimal.valueOf(Long.parseLong(item.getXlcd())));
+            resultMap.put(item.getGddw(), new BigDecimal(item.getXlcd()));
         }
 //        resultMap.put("zs", BigDecimal.valueOf(10.59828));
 //        resultMap.put("shk", BigDecimal.valueOf(8.27639));
