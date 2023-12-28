@@ -1,0 +1,89 @@
+2023-08-31 22:33:43.413 INFO  25852 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-31 22:33:43.436 INFO  25852 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 25852 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-08-31 22:33:43.437 DEBUG 25852 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-08-31 22:33:43.440 INFO  25852 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 22:33:46.110 INFO  25852 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-08-31 22:33:46.133 INFO  25852 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-08-31 22:33:46.135 INFO  25852 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 22:33:46.136 INFO  25852 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-08-31 22:33:46.358 INFO  25852 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 22:33:46.359 INFO  25852 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2803 ms
+2023-08-31 22:33:50.498 INFO  25852 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-08-31 22:33:50.618 INFO  25852 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-08-31 22:33:50.644 INFO  25852 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 8.97 seconds (JVM running for 12.687)
+2023-08-31 23:47:39.861 INFO  38420 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-31 23:47:39.878 INFO  38420 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 38420 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-08-31 23:47:39.879 DEBUG 38420 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-08-31 23:47:39.880 INFO  38420 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 23:47:43.677 INFO  38420 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-08-31 23:47:43.690 INFO  38420 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:47:43.691 INFO  38420 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 23:47:43.691 INFO  38420 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-08-31 23:47:43.879 INFO  38420 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 23:47:43.880 INFO  38420 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3889 ms
+2023-08-31 23:47:46.272 INFO  38420 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:47:46.295 INFO  38420 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-08-31 23:47:46.311 INFO  38420 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.792 seconds (JVM running for 10.704)
+2023-08-31 23:49:13.705 INFO  38420 --- [http-nio-8001-exec-3] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 23:49:13.705 INFO  38420 --- [http-nio-8001-exec-3] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 23:49:13.709 INFO  38420 --- [http-nio-8001-exec-3] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-08-31 23:49:13.889 INFO  38420 --- [http-nio-8001-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-31 23:49:15.678 INFO  38420 --- [http-nio-8001-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-31 23:49:16.542 INFO  38420 --- [http-nio-8001-exec-3] mybatis-flex-sql - select * from (select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM = 1,590ms
+2023-08-31 23:49:16.582 INFO  38420 --- [http-nio-8001-exec-3] mybatis-flex-sql - select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2022-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2022-01-01', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc,30ms
+2023-08-31 23:49:16.655 INFO  38420 --- [http-nio-8001-exec-3] mybatis-flex-sql - select * from (select SSXQ, PJYTDSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM <= 13,68ms
+2023-08-31 23:50:28.519 INFO  38420 --- [http-nio-8001-exec-2] mybatis-flex-sql - select * from (select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM = 1,30ms
+2023-08-31 23:50:28.549 INFO  38420 --- [http-nio-8001-exec-2] mybatis-flex-sql - select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2022-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2022-01-01', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc,29ms
+2023-08-31 23:50:28.619 INFO  38420 --- [http-nio-8001-exec-2] mybatis-flex-sql - select * from (select SSXQ, PJYTDSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM <= 13,68ms
+2023-08-31 23:52:00.702 WARN  38420 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s160ms460µs600ns).
+2023-08-31 23:52:07.360 INFO  38420 --- [http-nio-8001-exec-4] mybatis-flex-sql - select * from (select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM = 1,31ms
+2023-08-31 23:52:07.390 INFO  38420 --- [http-nio-8001-exec-4] mybatis-flex-sql - select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2022-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2022-01-01', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc,29ms
+2023-08-31 23:52:07.455 INFO  38420 --- [http-nio-8001-exec-4] mybatis-flex-sql - select * from (select SSXQ, PJYTDSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM <= 13,63ms
+2023-08-31 23:52:49.428 WARN  38420 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s287ms960µs500ns).
+2023-08-31 23:53:50.031 WARN  38420 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m603ms341µs700ns).
+2023-08-31 23:54:22.726 INFO  38420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-31 23:54:32.740 INFO  38420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-31 23:54:44.079 INFO  19300 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-31 23:54:44.096 INFO  19300 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 19300 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-08-31 23:54:44.097 DEBUG 19300 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-08-31 23:54:44.098 INFO  19300 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 23:54:46.214 INFO  19300 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-08-31 23:54:46.231 INFO  19300 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:54:46.232 INFO  19300 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 23:54:46.233 INFO  19300 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-08-31 23:54:46.493 INFO  19300 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 23:54:46.493 INFO  19300 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2300 ms
+2023-08-31 23:54:49.622 INFO  19300 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:54:49.649 INFO  19300 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-08-31 23:54:49.664 INFO  19300 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 6.897 seconds (JVM running for 9.983)
+2023-08-31 23:55:03.773 INFO  19300 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 23:55:03.774 INFO  19300 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 23:55:03.775 INFO  19300 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-31 23:55:03.975 INFO  19300 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-31 23:55:06.920 INFO  19300 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-31 23:55:07.168 INFO  19300 --- [http-nio-8001-exec-2] mybatis-flex-sql - select * from (select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM = 1,173ms
+2023-08-31 23:55:07.204 INFO  19300 --- [http-nio-8001-exec-2] mybatis-flex-sql - select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2022-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2022-01-01', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc,29ms
+2023-08-31 23:55:31.107 INFO  19300 --- [http-nio-8001-exec-2] mybatis-flex-sql - select SSXQ, PJYTDSJ from DP_GDKKX_ZB where (SSXQ is null or SSXQ='大连')   and DQTZ = '市中心+市区+城镇+农村'   and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')   and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd'),85ms
+2023-08-31 23:57:30.283 INFO  19300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-31 23:57:30.816 INFO  19300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-31 23:57:44.703 INFO  19380 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-08-31 23:57:44.721 INFO  19380 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 19380 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-08-31 23:57:44.721 DEBUG 19380 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-08-31 23:57:44.722 INFO  19380 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 23:57:46.922 INFO  19380 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-08-31 23:57:46.934 INFO  19380 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:57:46.937 INFO  19380 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 23:57:46.937 INFO  19380 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-08-31 23:57:47.131 INFO  19380 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 23:57:47.132 INFO  19380 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
+2023-08-31 23:57:49.595 INFO  19380 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-08-31 23:57:49.621 INFO  19380 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-08-31 23:57:49.636 INFO  19380 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 6.4 seconds (JVM running for 10.034)
+2023-08-31 23:57:53.810 INFO  19380 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 23:57:53.811 INFO  19380 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 23:57:53.821 INFO  19380 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-08-31 23:57:58.645 INFO  19380 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-31 23:58:10.261 INFO  19380 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-31 23:58:11.466 INFO  19380 --- [http-nio-8001-exec-2] mybatis-flex-sql - select * from (select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where SSXQ is null         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ desc, ZZSJ desc) where ROWNUM = 1,855ms
+2023-08-31 23:58:18.465 INFO  19380 --- [http-nio-8001-exec-2] mybatis-flex-sql - select PJTDSJ, PJYTDSJ, PJGZTDSJ, QSSJ, ZZSJ       from DP_GDKKX_ZB       where SSXQ is null         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2022-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2022-01-01', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ desc, ZZSJ desc,38ms
+2023-08-31 23:58:26.872 INFO  19380 --- [http-nio-8001-exec-2] mybatis-flex-sql - select * from (select SSXQ, PJYTDSJ       from DP_GDKKX_ZB       where (SSXQ is null or SSXQ='大连')         and DQTZ = '市中心+市区+城镇+农村'         and QSSJ >= TO_DATE('2023-01-01', 'yyyy-mm-dd')         and ZZSJ <= TO_DATE('2023-08-31', 'yyyy-mm-dd')       order by DP_GDKKX_ZB.QSSJ , ZZSJ desc) where ROWNUM <= 13,65ms

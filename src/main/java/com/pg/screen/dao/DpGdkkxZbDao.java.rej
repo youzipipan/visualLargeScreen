@@ -1,0 +1,10 @@
+diff a/src/main/java/com/pg/screen/dao/DpGdkkxZbDao.java b/src/main/java/com/pg/screen/dao/DpGdkkxZbDao.java	(rejected hunks)
+@@ -229,7 +229,7 @@
+         } else {
+             sql = "select SSXQ, " + columns + " " +
+                     "from DP_GDKKX_ZB " +
+-                    "where SSXQ is not null " +
++                    "where (SSXQ is null or SSXQ='大连') " +
+                     "  and DQTZ = '市中心+市区+城镇+农村' " +
+                     "  and QSSJ >= TO_DATE('" + beginDate + "', 'yyyy-mm-dd') " +
+                     "  and ZZSJ <= TO_DATE('" + endDate + "', 'yyyy-mm-dd')";

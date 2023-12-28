@@ -4,6 +4,8 @@ import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.core.row.Db;
 import com.mybatisflex.core.row.Row;
 import com.pg.screen.mapper.DefectLibraryMapper;
+import com.pg.screen.mapper.entity.DefectLibrary;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -67,6 +69,20 @@ public class DefectLibraryDao {
             queryWrapper.and(DEFECT_LIBRARY.PROCESSING_TIME.between(beginDate, endDate));
         }
         return Db.selectListByQuery(queryWrapper);
+    }
+
+    /**
+     * 查询缺陷库数量
+     *
+     * @param beginDate 开始日期
+     * @param endDate   结束日期
+     * @return count
+     */
+    public List<DefectLibrary> selectWorkOrderCount(LocalDate beginDate, LocalDate endDate) {
+        QueryWrapper queryWrapper = QueryWrapper.create()
+                .select(DEFECT_LIBRARY.WORK_ORDER_UNIT,DEFECT_LIBRARY.WORK_ORDER_STATUS,DEFECT_LIBRARY.DISCOVERY_TIME,DEFECT_LIBRARY.PROCESSING_TIME)
+                .where(DEFECT_LIBRARY.DISCOVERY_TIME.between(beginDate, endDate));
+        return defectLibraryMapper.selectListByQuery(queryWrapper);
     }
 
 }

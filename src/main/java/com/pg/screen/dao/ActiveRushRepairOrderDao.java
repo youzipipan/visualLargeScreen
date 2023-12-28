@@ -37,7 +37,7 @@ public class ActiveRushRepairOrderDao {
     public Long selectTotal(String workOrderUnit) {
         final TimeInterval timeInterval = TimeInterval.createOnMonday();
         QueryWrapper queryWrapper = QueryWrapper.create();
-        queryWrapper.where(ACTIVE_RUSH_REPAIR_ORDER.COMPLETION_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
+        queryWrapper.where(ACTIVE_RUSH_REPAIR_ORDER.FAILURE_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
         if (StringUtils.isNotBlank(workOrderUnit)) {
             queryWrapper.and(ACTIVE_RUSH_REPAIR_ORDER.WORK_ORDER_UNIT.eq(workOrderUnit));
         }
@@ -56,7 +56,7 @@ public class ActiveRushRepairOrderDao {
                 "            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS " +
                 "     FROM ACTIVE_RUSH_REPAIR_ORDER " +
                 "     WHERE WORK_ORDER_STATUS IN (?,?,?,?) " +
-                "           AND COMPLETION_TIME BETWEEN to_date('" + timeInterval.beginDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') " +
+                "           AND FAILURE_TIME BETWEEN to_date('" + timeInterval.beginDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') " +
                 "           AND to_date('" + timeInterval.endDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') ";
         if (StringUtils.isNotBlank(workOrderUnit)) {
             sql = sql + " AND WORK_ORDER_UNIT = ?";

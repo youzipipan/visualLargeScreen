@@ -1,0 +1,10 @@
+[2023-12-15 20:20:31.909] [INFO ] 11148 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Starting PowerGridScreenApplicationTests using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 11148 (started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+[2023-12-15 20:20:31.913] [DEBUG] 11148 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Running with Spring Boot v2.7.8, Spring v5.3.25
+[2023-12-15 20:20:31.914] [INFO ] 11148 --- [main] com.pg.screen.PowerGridScreenApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[2023-12-15 20:20:31.961] [INFO ] 11148 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2023-12-15 20:20:58.434] [INFO ] 11148 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Started PowerGridScreenApplicationTests in 27.773 seconds (JVM running for 31.341)
+[2023-12-15 21:30:24.722] [INFO ] 13136 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Starting PowerGridScreenApplicationTests using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 13136 (started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+[2023-12-15 21:30:24.726] [DEBUG] 13136 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Running with Spring Boot v2.7.8, Spring v5.3.25
+[2023-12-15 21:30:24.731] [INFO ] 13136 --- [main] com.pg.screen.PowerGridScreenApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[2023-12-15 21:30:24.800] [INFO ] 13136 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2023-12-15 21:30:46.251] [INFO ] 13136 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Started PowerGridScreenApplicationTests in 22.782 seconds (JVM running for 26.627)

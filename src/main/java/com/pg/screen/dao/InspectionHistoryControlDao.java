@@ -61,4 +61,24 @@ public class InspectionHistoryControlDao {
         return Db.selectListByQuery(queryWrapper);
     }
 
+    /**
+     * 查询供电公司巡检数量
+     *
+     * @param beginDate 开始日期
+     * @param endDate   结束日期
+     * @return list
+     */
+    public List<Row> selectinspectionSumByUnit(LocalDate beginDate, LocalDate endDate) {
+        QueryWrapper queryWrapper = QueryWrapper.create()
+                .select(INSPECTION_HISTORY_CONTROL.WORK_ORDER_UNIT,
+                        count().as("COUNTS"))
+                .from(INSPECTION_HISTORY_CONTROL)
+                .where(INSPECTION_HISTORY_CONTROL.INSPECTION_COMPLETION_TIME.isNotNull())
+                .groupBy(INSPECTION_HISTORY_CONTROL.WORK_ORDER_UNIT);
+        if (beginDate != null && endDate != null) {
+            queryWrapper.and(INSPECTION_HISTORY_CONTROL.INSPECTION_COMPLETION_TIME.between(beginDate, endDate));
+        }
+        return Db.selectListByQuery(queryWrapper);
+    }
+
 }

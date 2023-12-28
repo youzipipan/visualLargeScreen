@@ -3,18 +3,23 @@ package com.pg.screen.controller;
 import com.mybatisflex.core.row.Row;
 import com.pg.screen.common.HttpResult;
 import com.pg.screen.mapper.entity.DefectLibraryCountVo;
+import com.pg.screen.mapper.entity.DefectLibraryInfoVo;
 import com.pg.screen.model.vo.*;
 import com.pg.screen.service.OmAnalyzeService;
 
 import javax.annotation.Resource;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.logging.SimpleFormatter;
 
 /**
  * 运维分析接口
@@ -304,6 +309,19 @@ public class OmAnalyzeController {
             type = 0;
         }
         return omAnalyzeService.getWorkOrderStatusByUnit(beginDate, endDate, type);
+    }
+
+    /**
+     * 缺陷模块数据统计
+     *
+     * @param beginDate 开始日期
+     * @param endDate   结束日期
+     * @return list
+     */
+    @GetMapping("patrol_flaw_statistics_count")
+    public HttpResult<List<DefectLibraryInfoVo>> getWorkOrder(
+            String beginDate, String endDate) {
+        return omAnalyzeService.getWorkOrderInfo(beginDate, endDate);
     }
 
 }

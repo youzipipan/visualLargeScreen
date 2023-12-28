@@ -39,18 +39,19 @@ public class OperationMaintenanceOrderService {
      * @return 运维工单数
      */
     public HttpResult<XyDataCountVo> getCountByStatus(String workOrderUnit) {
-        Long missedOrderCount = operationMaintenanceOrderDao.selectCountByStatus(0,workOrderUnit);
+        /*Long missedOrderCount = operationMaintenanceOrderDao.selectCountByStatus(0,workOrderUnit);
         log.info("运维工单Y轴-未接单数量：{}", missedOrderCount);
         Long receivedOrderCount = operationMaintenanceOrderDao.selectCountByStatus(1,workOrderUnit);
         log.info("运维工单Y轴-已接单数量：{}", receivedOrderCount);
         Long patrolCount = operationMaintenanceOrderDao.selectCountByStatus(2,workOrderUnit);
         log.info("运维工单Y轴-巡视中数量：{}", patrolCount);
-        Long finishedCount = operationMaintenanceOrderDao.selectCountByStatus(3,workOrderUnit);
+        Long finishedCount = operationMaintenanceOrderDao.selectCountByStatus(3,workOrderUnit);*/
+        Long finishedCount = operationMaintenanceOrderDao.selectTotal(workOrderUnit);
         log.info("运维工单Y轴-已完成数量：{}", finishedCount);
         List<Long> yAxisNameList = new LinkedList<>();
-        yAxisNameList.add(missedOrderCount);
-        yAxisNameList.add(receivedOrderCount);
-        yAxisNameList.add(patrolCount);
+        yAxisNameList.add(0L);
+        yAxisNameList.add(0L);
+        yAxisNameList.add(0L);
         yAxisNameList.add(finishedCount);
         List<String> xAxisNameList = new LinkedList<>();
         xAxisNameList.add("未接单");

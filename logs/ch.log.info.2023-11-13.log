@@ -1,0 +1,50 @@
+2023-11-13 20:42:06.816 INFO  40176 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-11-13 20:42:06.821 INFO  40176 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 40176 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-11-13 20:42:06.822 DEBUG 40176 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-11-13 20:42:06.822 INFO  40176 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-13 20:42:09.317 INFO  40176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-11-13 20:42:09.327 INFO  40176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-13 20:42:09.327 INFO  40176 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-13 20:42:09.327 INFO  40176 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-13 20:42:09.486 INFO  40176 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-13 20:42:09.488 INFO  40176 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2623 ms
+2023-11-13 20:42:11.153 INFO  40176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-11-13 20:42:11.167 INFO  40176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-11-13 20:42:11.167 INFO  40176 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 5.029 seconds (JVM running for 6.68)
+2023-11-13 20:43:21.858 INFO  40176 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-13 20:43:21.859 INFO  40176 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-13 20:43:21.861 INFO  40176 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-11-13 20:47:55.385 INFO  29252 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-11-13 20:47:55.390 INFO  29252 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_111 on S2FDLWC0128 with PID 29252 (C:\work\code\2023\wc\visualLargeScreenServe\target\classes started by 71644463 in C:\work\code\2023\wc\visualLargeScreenServe)
+2023-11-13 20:47:55.390 DEBUG 29252 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-11-13 20:47:55.390 INFO  29252 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-13 20:47:56.470 INFO  29252 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-11-13 20:47:56.470 INFO  29252 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-11-13 20:47:56.470 INFO  29252 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-13 20:47:56.470 INFO  29252 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-13 20:47:56.580 INFO  29252 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-13 20:47:56.580 INFO  29252 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1137 ms
+2023-11-13 20:47:58.022 INFO  29252 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-11-13 20:47:58.038 INFO  29252 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-11-13 20:47:58.043 INFO  29252 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.349 seconds (JVM running for 4.721)
+2023-11-13 20:48:35.696 INFO  29252 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-13 20:48:35.696 INFO  29252 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-13 20:48:35.696 INFO  29252 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-11-13 20:48:39.186 INFO  29252 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-11-13 20:48:40.210 INFO  29252 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-11-13 20:48:40.240 DEBUG 29252 --- [http-nio-8001-exec-1] com.pg.screen.mapper.ZdgzgzfxMapper.getpage - ==>  Preparing: SELECT ROWNUM, t.*, TO_CHAR(t.EVENT_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as EVENTTIMESTR, TO_CHAR(t.INSPECTION_COMPLETION_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as INSPECTIONCOMPLETIONTIMESTR, TO_CHAR(t.SC_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as SCTIME FROM FAULT_DETAIL_ZDGZ t WHERE TO_CHAR(t.SC_TIME, 'YYYYMMDD' ) >= TO_CHAR(?, 'YYYYMMDD' ) AND TO_CHAR(t.SC_TIME, 'YYYYMMDD' ) <= TO_CHAR(?, 'YYYYMMDD' )
+2023-11-13 20:48:40.302 DEBUG 29252 --- [http-nio-8001-exec-1] com.pg.screen.mapper.ZdgzgzfxMapper.getpage - ==> Parameters: 2023-08-15 00:00:00.0(Timestamp), 2023-11-13 00:00:00.0(Timestamp)
+2023-11-13 20:48:40.461 DEBUG 29252 --- [http-nio-8001-exec-1] com.pg.screen.mapper.ZdgzgzfxMapper.getpage - <==      Total: 0
+2023-11-13 20:48:40.464 INFO  29252 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT ROWNUM,
+               t.*,
+               TO_CHAR(t.EVENT_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as EVENTTIMESTR,
+               TO_CHAR(t.INSPECTION_COMPLETION_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as INSPECTIONCOMPLETIONTIMESTR,
+               TO_CHAR(t.SC_TIME, 'YYYY-MM-DD hh24:mi:ss' ) as SCTIME
+        FROM FAULT_DETAIL_ZDGZ t
+         WHERE  TO_CHAR(t.SC_TIME, 'YYYYMMDD' )  >=  TO_CHAR('2023-08-15 00:00:00', 'YYYYMMDD' )
+            
+            
+                AND TO_CHAR(t.SC_TIME, 'YYYYMMDD' )  <=  TO_CHAR('2023-11-13 00:00:00', 'YYYYMMDD' ),161ms
+2023-11-13 20:48:42.048 INFO  29252 --- [http-nio-8001-exec-1] com.pg.screen.common.AspectControllerTimeConsuming - getpage()方法的入参为：[ZdgzgzfxParam(GDDW=null, GZLX=null, GZYYDL=null, trueFalseTZ=null, trueFalseDb=null, startDate=Tue Aug 15 00:00:00 CST 2023, endDate=Mon Nov 13 00:00:00 CST 2023, tjDate=null)]，返回值为：HttpResult(success=true, message=ok, data=[], code=200)，耗时(ms):310
+2023-11-13 21:17:26.556 INFO  29252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-11-13 21:17:36.573 INFO  29252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

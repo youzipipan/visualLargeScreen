@@ -37,7 +37,7 @@ public class ActiveRepairOrderDao {
     public Long selectTotal(String workOrderUnit) {
         final TimeInterval timeInterval = TimeInterval.createOnMonday();
         QueryWrapper queryWrapper = QueryWrapper.create();
-        queryWrapper.where(ACTIVE_REPAIR_ORDER.COMPLETION_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
+        queryWrapper.where(ACTIVE_REPAIR_ORDER.FAILURE_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
         if (StringUtils.isNotBlank(workOrderUnit)) {
             queryWrapper.and(ACTIVE_REPAIR_ORDER.WORK_ORDER_UNIT.eq(workOrderUnit));
         }
@@ -68,7 +68,7 @@ public class ActiveRepairOrderDao {
         if (StringUtils.isNotBlank(workOrderUnit)) {
             queryWrapper.and(ACTIVE_REPAIR_ORDER.WORK_ORDER_UNIT.eq(workOrderUnit));
         }
-        queryWrapper.and(ACTIVE_REPAIR_ORDER.COMPLETION_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
+        queryWrapper.and(ACTIVE_REPAIR_ORDER.FAILURE_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
         return activeRepairOrderMapper.selectCountByQuery(queryWrapper);
     }
 

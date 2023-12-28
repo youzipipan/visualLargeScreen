@@ -1,0 +1,454 @@
+2023-12-27 15:37:35.113 INFO  748 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 15:37:35.123 INFO  748 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 748 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 15:37:35.124 DEBUG 748 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 15:37:35.125 INFO  748 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 15:37:37.986 INFO  748 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 15:37:38.004 INFO  748 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:37:38.006 INFO  748 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 15:37:38.007 INFO  748 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 15:37:38.319 INFO  748 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 15:37:38.319 INFO  748 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3142 ms
+2023-12-27 15:37:40.233 INFO  748 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:37:40.252 INFO  748 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 15:37:40.264 INFO  748 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 5.608 seconds (JVM running for 12.658)
+2023-12-27 15:38:31.347 INFO  748 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 15:38:31.348 INFO  748 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 15:38:31.348 INFO  748 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-12-27 15:39:30.855 INFO  7020 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 15:39:30.861 INFO  7020 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 7020 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 15:39:30.861 DEBUG 7020 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 15:39:30.862 INFO  7020 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 15:39:32.323 INFO  7020 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 15:39:32.334 INFO  7020 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:39:32.335 INFO  7020 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 15:39:32.335 INFO  7020 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 15:39:32.493 INFO  7020 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 15:39:32.494 INFO  7020 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1566 ms
+2023-12-27 15:39:33.948 INFO  7020 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:39:33.974 INFO  7020 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 15:39:33.986 INFO  7020 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.755 seconds (JVM running for 11.203)
+2023-12-27 15:39:41.790 INFO  7020 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 15:39:41.791 INFO  7020 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 15:39:41.796 INFO  7020 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-12-27 15:49:46.343 INFO  7900 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 15:49:46.350 INFO  7900 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 7900 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 15:49:46.351 DEBUG 7900 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 15:49:46.351 INFO  7900 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 15:49:47.769 INFO  7900 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 15:49:47.777 INFO  7900 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:49:47.778 INFO  7900 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 15:49:47.779 INFO  7900 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 15:49:47.911 INFO  7900 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 15:49:47.911 INFO  7900 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1500 ms
+2023-12-27 15:49:49.217 INFO  7900 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:49:49.238 INFO  7900 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 15:49:49.250 INFO  7900 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.448 seconds (JVM running for 9.703)
+2023-12-27 15:49:57.327 INFO  7900 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 15:49:57.327 INFO  7900 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 15:49:57.328 INFO  7900 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-27 15:51:41.339 INFO  7176 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 15:51:41.349 INFO  7176 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 7176 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 15:51:41.349 DEBUG 7176 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 15:51:41.350 INFO  7176 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 15:51:42.726 INFO  7176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 15:51:42.733 INFO  7176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:51:42.734 INFO  7176 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 15:51:42.735 INFO  7176 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 15:51:42.860 INFO  7176 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 15:51:42.860 INFO  7176 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1449 ms
+2023-12-27 15:51:44.366 INFO  7176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:51:44.418 INFO  7176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 15:51:44.430 INFO  7176 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.604 seconds (JVM running for 9.829)
+2023-12-27 15:51:51.410 INFO  7176 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 15:51:51.410 INFO  7176 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 15:51:51.411 INFO  7176 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-27 15:53:39.202 INFO  6788 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 15:53:39.209 INFO  6788 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 6788 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 15:53:39.210 DEBUG 6788 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 15:53:39.210 INFO  6788 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 15:53:40.505 INFO  6788 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 15:53:40.513 INFO  6788 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:53:40.514 INFO  6788 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 15:53:40.515 INFO  6788 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 15:53:40.637 INFO  6788 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 15:53:40.637 INFO  6788 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1368 ms
+2023-12-27 15:53:41.854 INFO  6788 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 15:53:41.875 INFO  6788 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 15:53:41.885 INFO  6788 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.146 seconds (JVM running for 9.413)
+2023-12-27 15:53:47.108 INFO  6788 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 15:53:47.108 INFO  6788 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 15:53:47.109 INFO  6788 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-27 16:03:03.327 INFO  5148 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 16:03:03.338 INFO  5148 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 5148 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 16:03:03.339 DEBUG 5148 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 16:03:03.340 INFO  5148 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 16:03:04.753 INFO  5148 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 16:03:04.763 INFO  5148 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 16:03:04.764 INFO  5148 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 16:03:04.764 INFO  5148 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 16:03:04.995 INFO  5148 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 16:03:04.996 INFO  5148 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1599 ms
+2023-12-27 16:03:06.362 INFO  5148 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 16:03:06.385 INFO  5148 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 16:03:06.398 INFO  5148 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.564 seconds (JVM running for 10.736)
+2023-12-27 16:03:13.453 INFO  5148 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 16:03:13.453 INFO  5148 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 16:03:13.454 INFO  5148 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-27 16:04:03.950 INFO  5148 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-27 16:04:10.655 INFO  5148 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-27 16:04:10.698 DEBUG 5148 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:04:11.301 DEBUG 5148 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:04:13.488 DEBUG 5148 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:04:13.493 INFO  5148 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,2192ms
+2023-12-27 16:04:23.402 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:04:23.403 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:04:23.404 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:04:23.404 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:23.405 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:23.666 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:04:23.666 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:04:23.666 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:04:23.667 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:04:23.667 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:23.864 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:04:23.865 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:04:23.865 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:04:23.865 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:23.865 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:24.038 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:04:24.038 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:04:24.038 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:04:24.039 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:24.039 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:34.730 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:34.731 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:04:34.733 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:04:34.733 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:04:34.733 INFO  5148 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:04:41.296 DEBUG 5148 --- [http-nio-8001-exec-1] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:04:41.297 DEBUG 5148 --- [http-nio-8001-exec-1] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:04:42.630 DEBUG 5148 --- [http-nio-8001-exec-1] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:04:42.631 INFO  5148 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1333ms
+2023-12-27 16:04:42.661 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:04:42.661 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:04:42.661 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:04:42.662 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:42.662 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.663 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:04:42.663 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:04:42.663 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:04:42.663 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:04:42.664 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.664 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:04:42.665 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:04:42.666 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:04:42.667 INFO  5148 --- [http-nio-8001-exec-1] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:05:32.277 DEBUG 5148 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:05:32.280 DEBUG 5148 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:05:34.020 DEBUG 5148 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:05:34.022 INFO  5148 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1741ms
+2023-12-27 16:05:39.539 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:05:42.001 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:05:42.002 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:05:42.002 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:06:41.640 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:06:43.143 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:06:43.783 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:06:45.170 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:06:45.845 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:06:49.175 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:06:50.043 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:06:50.044 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:06:50.044 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:06:50.044 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:06:54.783 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:06:55.591 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:06:55.591 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:06:55.591 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:06:55.592 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:06:57.474 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:06:58.545 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:06:58.545 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:06:58.545 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:06:58.545 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:07:00.387 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:03.805 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:07:03.806 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:07:03.806 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:07:03.807 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:05.543 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:05.543 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:07:05.543 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:07:05.543 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:07:05.543 INFO  5148 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:07:16.851 DEBUG 5148 --- [http-nio-8001-exec-5] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:07:16.852 DEBUG 5148 --- [http-nio-8001-exec-5] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:07:18.236 DEBUG 5148 --- [http-nio-8001-exec-5] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:07:18.238 INFO  5148 --- [http-nio-8001-exec-5] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1384ms
+2023-12-27 16:07:18.274 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:07:18.274 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:07:18.274 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:07:18.274 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:20.719 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:20.720 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:07:20.720 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:07:20.720 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:07:20.720 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:07:21.382 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:21.382 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:07:21.382 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:07:21.382 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:07:21.382 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:22.371 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:22.371 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:07:22.372 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:07:22.372 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:07:22.372 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:24.591 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:24.591 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:07:24.591 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:07:24.591 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:07:24.591 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:07:26.841 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:26.841 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:07:26.841 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:07:26.841 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:07:26.842 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:29.868 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:29.868 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:07:29.868 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:07:29.868 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:07:29.868 INFO  5148 --- [http-nio-8001-exec-5] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:07:39.695 DEBUG 5148 --- [http-nio-8001-exec-3] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:07:39.696 DEBUG 5148 --- [http-nio-8001-exec-3] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:07:41.054 DEBUG 5148 --- [http-nio-8001-exec-3] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:07:41.055 INFO  5148 --- [http-nio-8001-exec-3] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1359ms
+2023-12-27 16:07:41.094 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:07:41.094 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:07:41.094 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:07:41.094 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:42.100 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:42.100 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:07:42.100 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:07:42.100 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:07:42.100 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:07:42.528 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:42.528 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:07:42.528 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:07:42.528 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:07:42.528 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:42.954 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:42.954 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:07:42.955 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:07:42.955 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:07:42.955 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:07:43.691 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:43.691 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:07:43.691 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:07:43.691 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:07:43.691 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:07:50.997 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:07:50.997 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:07:50.997 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:07:50.997 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:07:50.997 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:08:10.595 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:08:10.595 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:08:10.595 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:08:10.595 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:08:10.595 INFO  5148 --- [http-nio-8001-exec-3] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:08:38.029 WARN  5148 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s104ms950µs200ns).
+2023-12-27 16:12:16.241 DEBUG 5148 --- [http-nio-8001-exec-8] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:12:16.242 DEBUG 5148 --- [http-nio-8001-exec-8] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:12:18.230 DEBUG 5148 --- [http-nio-8001-exec-8] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:12:18.231 INFO  5148 --- [http-nio-8001-exec-8] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1989ms
+2023-12-27 16:12:18.318 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:12:18.319 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:12:18.319 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:12:18.319 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:12:19.071 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:19.071 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:12:19.071 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:12:19.071 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:12:19.071 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:12:27.497 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:27.497 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:12:27.497 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:12:27.497 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:12:27.497 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:12:32.996 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:32.996 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:12:32.996 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:12:32.996 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:12:32.996 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:12:34.156 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:34.157 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:12:34.157 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:12:34.157 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:12:34.157 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:12:35.516 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:35.516 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:12:35.516 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:12:35.516 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:12:35.516 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:12:37.034 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:12:37.034 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:12:37.034 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:12:37.034 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:12:37.034 INFO  5148 --- [http-nio-8001-exec-8] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:15:22.137 WARN  5148 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s738ms656µs900ns).
+2023-12-27 16:17:27.260 WARN  5148 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s122ms727µs300ns).
+2023-12-27 16:21:21.579 INFO  11924 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 16:21:21.587 INFO  11924 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 11924 (D:\work\visualLargeScreenServe\visualLargeScreenServe\target\classes started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 16:21:21.588 DEBUG 11924 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 16:21:21.588 INFO  11924 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 16:21:22.876 INFO  11924 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-27 16:21:22.884 INFO  11924 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-27 16:21:22.885 INFO  11924 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-27 16:21:22.885 INFO  11924 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-27 16:21:23.000 INFO  11924 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-27 16:21:23.000 INFO  11924 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+2023-12-27 16:21:24.188 INFO  11924 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-27 16:21:24.207 INFO  11924 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-27 16:21:24.218 INFO  11924 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 3.128 seconds (JVM running for 9.692)
+2023-12-27 16:21:34.111 INFO  11924 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 16:21:34.112 INFO  11924 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-27 16:21:34.115 INFO  11924 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-12-27 16:21:34.245 INFO  11924 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-27 16:21:34.973 INFO  11924 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-27 16:21:34.980 DEBUG 11924 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:21:35.107 DEBUG 11924 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-01(LocalDate), 2023-12-23(LocalDate)
+2023-12-27 16:21:36.570 DEBUG 11924 --- [http-nio-8001-exec-2] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 344
+2023-12-27 16:21:36.575 INFO  11924 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-01' AND '2023-12-23' ,1469ms
+2023-12-27 16:21:36.619 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:21:36.619 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：120
+2023-12-27 16:21:36.620 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：120
+2023-12-27 16:21:36.620 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:21:46.340 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:46.340 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：高新园区供电分公司
+2023-12-27 16:21:46.340 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：49
+2023-12-27 16:21:46.341 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：48
+2023-12-27 16:21:46.341 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：98.00
+2023-12-27 16:21:48.122 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:48.122 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:21:48.122 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：3
+2023-12-27 16:21:48.123 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：3
+2023-12-27 16:21:48.123 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:21:48.485 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:48.485 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:21:48.485 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：6
+2023-12-27 16:21:48.485 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：6
+2023-12-27 16:21:48.485 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:21:48.844 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:48.844 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:21:48.845 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：42
+2023-12-27 16:21:48.845 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：32
+2023-12-27 16:21:48.845 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：76.00
+2023-12-27 16:21:49.274 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:49.274 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:21:49.275 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：18
+2023-12-27 16:21:49.275 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：18
+2023-12-27 16:21:49.275 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:21:49.743 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:21:49.744 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市长兴岛临港工业区供电公司
+2023-12-27 16:21:49.744 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:21:49.744 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：0
+2023-12-27 16:21:49.744 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：0.00
+2023-12-27 16:22:01.755 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:22:02.922 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：甘井子供电分公司
+2023-12-27 16:22:02.923 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：12
+2023-12-27 16:22:02.924 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：12
+2023-12-27 16:22:02.924 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:22:10.049 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:22:10.745 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区供电公司
+2023-12-27 16:22:10.746 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：17
+2023-12-27 16:22:10.747 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：8
+2023-12-27 16:22:10.747 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：47.00
+2023-12-27 16:22:15.317 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:22:16.190 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市金州新区供电公司
+2023-12-27 16:22:16.191 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：47
+2023-12-27 16:22:16.192 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：35
+2023-12-27 16:22:16.193 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：74.00
+2023-12-27 16:22:25.051 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：11小时
+2023-12-27 16:22:25.051 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 供电单位：沙河口供电分公司
+2023-12-27 16:22:25.052 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：29
+2023-12-27 16:22:25.052 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 已消缺数量：29
+2023-12-27 16:22:25.052 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:22:25.461 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:22:25.566 INFO  11924 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT work_order_unit, COUNT(*) COUNTS FROM INSPECTION_HISTORY_CONTROL WHERE inspection_completion_time IS NOT NULL  AND inspection_completion_time BETWEEN  '2023-12-01' AND '2023-12-23'  GROUP BY work_order_unit,45ms
+2023-12-27 16:22:25.567 INFO  11924 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getWorkOrder()方法的入参为：[2023-12-01 12:12:30, 2023-12-22 03:23:34]，返回值为：HttpResult(success=true, message=ok, data=[DefectLibraryInfoVo(name=国网瓦房店市供电公司, inspectionSum=72, solveSum=120, completeSolve=120, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=高新园区供电分公司, inspectionSum=32, solveSum=49, completeSolve=48, aveDate=0小时, rate=98.00), DefectLibraryInfoVo(name=中山供电分公司, inspectionSum=19, solveSum=3, completeSolve=3, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市开发区东部供电公司, inspectionSum=20, solveSum=6, completeSolve=6, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网普兰店市供电公司, inspectionSum=30, solveSum=42, completeSolve=32, aveDate=0小时, rate=76.00), DefectLibraryInfoVo(name=国网庄河市供电公司, inspectionSum=0, solveSum=18, completeSolve=18, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市长兴岛临港工业区供电公司, inspectionSum=0, solveSum=1, completeSolve=0, aveDate=0小时, rate=0.00), DefectLibraryInfoVo(name=甘井子供电分公司, inspectionSum=19, solveSum=12, completeSolve=12, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市开发区供电公司, inspectionSum=16, solveSum=17, completeSolve=8, aveDate=0小时, rate=47.00), DefectLibraryInfoVo(name=国网大连市金州新区供电公司, inspectionSum=14, solveSum=47, completeSolve=35, aveDate=11小时, rate=74.00), DefectLibraryInfoVo(name=沙河口供电分公司, inspectionSum=0, solveSum=29, completeSolve=29, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市旅顺口区供电公司, inspectionSum=9, solveSum=0, completeSolve=0, aveDate=0小时, rate=0)], code=200)，耗时(ms):365
+2023-12-27 16:24:06.469 DEBUG 11924 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==>  Preparing: SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN ? AND ?
+2023-12-27 16:24:06.470 DEBUG 11924 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - ==> Parameters: 2023-12-11(LocalDate), 2023-12-16(LocalDate)
+2023-12-27 16:24:07.001 DEBUG 11924 --- [http-nio-8001-exec-4] c.p.s.mapper.DefectLibraryMapper.selectListByQuery - <==      Total: 99
+2023-12-27 16:24:07.001 INFO  11924 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT work_order_unit, work_order_status, discovery_time, processing_time FROM DEFECT_LIBRARY WHERE discovery_time BETWEEN  '2023-12-11' AND '2023-12-16' ,531ms
+2023-12-27 16:24:07.037 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网瓦房店市供电公司
+2023-12-27 16:24:07.038 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：55
+2023-12-27 16:24:07.038 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：55
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：中山供电分公司
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：1
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：1
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网普兰店市供电公司
+2023-12-27 16:24:07.039 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：7
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：4
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：57.00
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市开发区东部供电公司
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：2
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：2
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网庄河市供电公司
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：4
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：4
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.040 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：国网大连市金州新区供电公司
+2023-12-27 16:24:07.041 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：10
+2023-12-27 16:24:07.041 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：8
+2023-12-27 16:24:07.041 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：80.00
+2023-12-27 16:24:07.041 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：1天5小时
+2023-12-27 16:24:07.041 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 供电单位：沙河口供电分公司
+2023-12-27 16:24:07.053 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 发现缺陷数量：20
+2023-12-27 16:24:07.053 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 已消缺数量：20
+2023-12-27 16:24:07.054 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理率：100.00
+2023-12-27 16:24:07.054 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.service.OmAnalyzeService - 缺陷处理平均时长：0小时
+2023-12-27 16:24:07.102 INFO  11924 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT work_order_unit, COUNT(*) COUNTS FROM INSPECTION_HISTORY_CONTROL WHERE inspection_completion_time IS NOT NULL  AND inspection_completion_time BETWEEN  '2023-12-11' AND '2023-12-16'  GROUP BY work_order_unit,47ms
+2023-12-27 16:24:07.103 INFO  11924 --- [http-nio-8001-exec-4] com.pg.screen.common.AspectControllerTimeConsuming - getWorkOrder()方法的入参为：[2023-12-11 12:12:30, 2023-12-15 03:23:34]，返回值为：HttpResult(success=true, message=ok, data=[DefectLibraryInfoVo(name=国网瓦房店市供电公司, inspectionSum=10, solveSum=55, completeSolve=55, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=中山供电分公司, inspectionSum=0, solveSum=1, completeSolve=1, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网普兰店市供电公司, inspectionSum=5, solveSum=7, completeSolve=4, aveDate=0小时, rate=57.00), DefectLibraryInfoVo(name=国网大连市开发区东部供电公司, inspectionSum=8, solveSum=2, completeSolve=2, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网庄河市供电公司, inspectionSum=0, solveSum=4, completeSolve=4, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市金州新区供电公司, inspectionSum=0, solveSum=10, completeSolve=8, aveDate=1天5小时, rate=80.00), DefectLibraryInfoVo(name=沙河口供电分公司, inspectionSum=0, solveSum=20, completeSolve=20, aveDate=0小时, rate=100.00), DefectLibraryInfoVo(name=国网大连市旅顺口区供电公司, inspectionSum=9, solveSum=0, completeSolve=0, aveDate=0小时, rate=0)], code=200)，耗时(ms):485
+2023-12-27 16:26:53.891 INFO  3892 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Starting PowerGridScreenApplicationTests using Java 1.8.0_92 on LAPTOP-9IRV006H with PID 3892 (started by lenovo in D:\work\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-27 16:26:53.893 DEBUG 3892 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-27 16:26:53.893 INFO  3892 --- [main] com.pg.screen.PowerGridScreenApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-12-27 16:26:53.903 INFO  3892 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-27 16:27:04.692 INFO  3892 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Started PowerGridScreenApplicationTests in 11.346 seconds (JVM running for 12.765)

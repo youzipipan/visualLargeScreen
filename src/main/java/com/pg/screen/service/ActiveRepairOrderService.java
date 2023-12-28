@@ -44,6 +44,7 @@ public class ActiveRepairOrderService {
         log.info("主动检修-已接单数量：{}", receivedOrderCount);
         // 已完成数量
         Long finishedCount = activeRepairOrderDao.selectCountByStatus(2,workOrderUnit);
+
         log.info("主动检修-已完成数量：{}", finishedCount);
         List<Long> yAxisNameList = new LinkedList<>();
         yAxisNameList.add(0L);

@@ -4,17 +4,25 @@ import com.mybatisflex.core.row.Row;
 import com.pg.screen.common.HttpResult;
 import com.pg.screen.dao.*;
 import com.pg.screen.enums.WorkOrderUnitEnum;
+import com.pg.screen.mapper.entity.DefectLibrary;
 import com.pg.screen.mapper.entity.DefectLibraryCountVo;
+import com.pg.screen.mapper.entity.DefectLibraryInfoVo;
 import com.pg.screen.model.vo.*;
 import com.pg.screen.utils.ToolUtils;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -23,6 +31,7 @@ import java.util.stream.IntStream;
  *
  * @author c.chuang
  */
+@Slf4j
 @Service
 public class OmAnalyzeService {
 
@@ -434,6 +443,105 @@ public class OmAnalyzeService {
         List<Long> list = ToolUtils.buildList(rows, "WORK_ORDER_UNIT", "COUNTS");
         XyDataCountVo vo = new XyDataCountVo(WorkOrderUnitEnum.getShortName(), list);
         return new HttpResult<XyDataCountVo>().success(vo);
+    }
+
+    /**
+     * 缺陷模块数据统计
+     *
+     * @param beginDate 开始日期
+     * @param endDate   结束日期
+     * @return list
+     */
+    public HttpResult<List<DefectLibraryInfoVo>> getWorkOrderInfo(String beginD, String endD) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            beginD=sdf.format(sdf.parse(beginD));
+            endD=sdf.format(sdf.parse(endD));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        LocalDate beginDate = LocalDate.parse(beginD, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        LocalDate endDate = LocalDate.parse(endD,DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        endDate=endDate.plusDays(1);
+
+        List<DefectLibraryInfoVo> defectLibraryInfoVos = new ArrayList<>();
+        //按时间查询全部缺陷数
+        List<DefectLibrary> defectLibraryList = defectLibraryDao.selectWorkOrderCount(beginDate, endDate);
+        Map<String, List<DefectLibrary>> map = defectLibraryList.stream().collect(Collectors.groupingBy(DefectLibrary::getWorkOrderUnit));
+
+        map.forEach((k,v) ->{
+
+            DefectLibraryInfoVo defectLibraryInfoVo = new DefectLibraryInfoVo();
+            //供电单位
+            defectLibraryInfoVo.setName(k);
+            log.info("供电单位："+k);
+            //某单位缺陷数量
+            int solveSum = v.size();
+            defectLibraryInfoVo.setSolveSum(solveSum);
+            log.info("发现缺陷数量："+solveSum);
+            List<DefectLibrary> collect = v.stream().filter(o -> "已消缺".equals(o.getWorkOrderStatus())).collect(Collectors.toList());
+            //某单位已消缺数量
+            int completeSolve = collect.size();
+            defectLibraryInfoVo.setCompleteSolve(completeSolve);
+            log.info("已消缺数量："+completeSolve);
+            //某单位缺陷处理率
+            BigDecimal rate = new BigDecimal(completeSolve).divide (new BigDecimal(solveSum),2, BigDecimal.ROUND_HALF_UP);
+            defectLibraryInfoVo.setRate(rate.multiply(BigDecimal.valueOf(100)));
+            log.info("缺陷处理率："+defectLibraryInfoVo.getRate());
+            //某单位平均时长
+            AtomicReference<Long> dealTime = new AtomicReference<>(0L);
+            collect.forEach(e ->{
+                Date end = e.getProcessingTime();
+                Date begin = e.getDiscoveryTime();
+                Long time = end.getTime () -begin.getTime ();
+                dealTime.updateAndGet(v1 -> v1 + time);
+            });
+            BigDecimal milliseconds = BigDecimal.valueOf(60 * 60 * 1000);
+            BigDecimal bigDecimal = new BigDecimal (String.valueOf(dealTime));
+            if(completeSolve==0){
+                defectLibraryInfoVo.setAveDate("0小时");
+            }else{
+                BigDecimal millAve = bigDecimal.divide(BigDecimal.valueOf(completeSolve),2, BigDecimal.ROUND_HALF_UP);
+                BigDecimal time = millAve.divide (milliseconds, BigDecimal.ROUND_UP);
+                BigDecimal day = time.divide (new BigDecimal(24),0,BigDecimal.ROUND_FLOOR);
+                BigDecimal hour = time.divideAndRemainder (new BigDecimal(24))[1].setScale(0,BigDecimal.ROUND_FLOOR);
+                if(day.compareTo(BigDecimal.valueOf(0)) > 0 && hour.compareTo(BigDecimal.valueOf(0)) > 0){
+                    defectLibraryInfoVo.setAveDate(day+"天"+hour+"小时");
+                }else if(day.compareTo(BigDecimal.valueOf(0)) > 0 && hour.compareTo(BigDecimal.valueOf(0)) == 0){
+                    defectLibraryInfoVo.setAveDate(day+"天");
+                }else{
+                    defectLibraryInfoVo.setAveDate(hour+"小时");
+                }
+            }
+            log.info("缺陷处理平均时长："+defectLibraryInfoVo.getAveDate());
+
+            defectLibraryInfoVos.add(defectLibraryInfoVo);
+        });
+
+        //按日期查询已巡检数
+        List<Row> inspectionSumList = inspectionHistoryControlDao.selectinspectionSumByUnit(beginDate, endDate);
+
+        inspectionSumList.forEach(e ->{
+            for (int i = 0; i < defectLibraryInfoVos.size(); i++) {
+                if(defectLibraryInfoVos.get(i).getName().equals(e.getString("WORK_ORDER_UNIT"))){
+                    //某单位已巡检数量
+                    defectLibraryInfoVos.get(i).setInspectionSum(Integer.parseInt(e.getString("COUNTS")));
+                }else{
+                    if(!map.containsKey(e.getString("WORK_ORDER_UNIT"))){
+                        DefectLibraryInfoVo defectLibraryInfoVo = new DefectLibraryInfoVo();
+                        defectLibraryInfoVo.setName(e.getString("WORK_ORDER_UNIT"));
+                        defectLibraryInfoVo.setInspectionSum(Integer.parseInt(e.getString("COUNTS")));
+                        defectLibraryInfoVo.setAveDate("0小时");
+                        defectLibraryInfoVo.setRate(BigDecimal.valueOf(0));
+                        defectLibraryInfoVos.add(defectLibraryInfoVo);
+                        map.put(e.getString("WORK_ORDER_UNIT"),null);
+                    }
+                }
+            }
+        });
+
+        return new HttpResult<List<DefectLibraryInfoVo>>().success(defectLibraryInfoVos);
     }
 
 }

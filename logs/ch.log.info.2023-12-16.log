@@ -1,0 +1,591 @@
+2023-12-16 11:27:40.320 INFO  14176 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 11:27:40.404 INFO  14176 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 14176 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 11:27:40.405 DEBUG 14176 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 11:27:40.407 INFO  14176 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 11:27:48.466 INFO  14176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 11:27:48.512 INFO  14176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:27:48.513 INFO  14176 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 11:27:48.514 INFO  14176 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 11:27:49.067 INFO  14176 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 11:27:49.067 INFO  14176 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8317 ms
+2023-12-16 11:27:52.628 INFO  14176 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:27:52.702 INFO  14176 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 11:27:52.728 INFO  14176 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 14.255 seconds (JVM running for 23.573)
+2023-12-16 11:28:06.144 INFO  14176 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 11:28:06.144 INFO  14176 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 11:28:06.146 INFO  14176 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-12-16 11:28:12.042 INFO  14176 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 11:28:24.771 INFO  14176 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 11:28:25.888 INFO  14176 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND COMPLETION_TIME BETWEEN to_date('2023-12-11 00:00:00','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-12-16 23:59:59','yyyy-mm-dd HH24:mi:ss') ,776ms
+2023-12-16 11:31:12.849 WARN  14176 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m47s962ms876µs).
+2023-12-16 11:31:12.856 INFO  14176 --- [http-nio-8001-exec-1] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单状态XY轴数据：[]
+2023-12-16 11:31:21.239 INFO  14176 --- [http-nio-8001-exec-1] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未受理, 已派单, 已回复, 已归档], yAxisNameList=[0, 0, 0, 0]), code=200)，耗时(ms):994
+2023-12-16 11:34:42.243 INFO  12924 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 11:34:42.247 INFO  12924 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 12924 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 11:34:42.250 DEBUG 12924 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 11:34:42.251 INFO  12924 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 11:34:45.398 INFO  12924 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 11:34:45.418 INFO  12924 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:34:45.419 INFO  12924 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 11:34:45.420 INFO  12924 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 11:34:45.732 INFO  12924 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 11:34:45.733 INFO  12924 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3347 ms
+2023-12-16 11:34:48.620 INFO  12924 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:34:48.689 INFO  12924 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 11:34:48.710 INFO  12924 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.874 seconds (JVM running for 14.803)
+2023-12-16 11:35:04.235 INFO  12924 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 11:35:04.236 INFO  12924 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 11:35:04.237 INFO  12924 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-16 11:35:06.404 INFO  12924 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 11:35:18.719 INFO  12924 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 11:35:19.217 INFO  12924 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND FAILURE_TIME BETWEEN to_date('2023-03-20 00:00:00yyyy-MM-dd HH:mm:ss','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-03-31 23:59:59yyyy-MM-dd HH:mm:ss','yyyy-mm-dd HH24:mi:ss') ,139ms
+2023-12-16 11:47:10.119 INFO  5500 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 11:47:10.131 INFO  5500 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 5500 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 11:47:10.132 DEBUG 5500 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 11:47:10.134 INFO  5500 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 11:47:13.357 INFO  5500 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 11:47:13.376 INFO  5500 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:47:13.378 INFO  5500 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 11:47:13.378 INFO  5500 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 11:47:13.689 INFO  5500 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 11:47:13.690 INFO  5500 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3410 ms
+2023-12-16 11:47:16.521 INFO  5500 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 11:47:16.587 INFO  5500 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 11:47:16.608 INFO  5500 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.851 seconds (JVM running for 15.412)
+2023-12-16 11:47:26.490 INFO  5500 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 11:47:26.491 INFO  5500 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 11:47:26.495 INFO  5500 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-12-16 11:47:29.310 INFO  5500 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 11:47:43.337 INFO  5500 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 11:47:44.431 INFO  5500 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND FAILURE_TIME BETWEEN to_date('2023-12-11 00:00:00','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-12-16 23:59:59','yyyy-mm-dd HH24:mi:ss') ,748ms
+2023-12-16 11:47:47.472 INFO  5500 --- [http-nio-8001-exec-2] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单状态XY轴数据：[{WORK_ORDER_STATUS=已派单, COUNTS=6}, {WORK_ORDER_STATUS=已回复, COUNTS=1}, {WORK_ORDER_STATUS=未受理, COUNTS=155}, {WORK_ORDER_STATUS=已归档, COUNTS=5}]
+2023-12-16 11:48:26.760 INFO  5500 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未受理, 已派单, 已回复, 已归档], yAxisNameList=[155, 6, 1, 5]), code=200)，耗时(ms):176
+2023-12-16 11:51:18.977 INFO  5500 --- [http-nio-8001-exec-3] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND FAILURE_TIME BETWEEN to_date('2023-12-11 00:00:00','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-12-16 23:59:59','yyyy-mm-dd HH24:mi:ss') ,8ms
+2023-12-16 11:51:18.977 INFO  5500 --- [http-nio-8001-exec-3] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单状态XY轴数据：[{WORK_ORDER_STATUS=已归档, COUNTS=6}, {WORK_ORDER_STATUS=已派单, COUNTS=6}, {WORK_ORDER_STATUS=未受理, COUNTS=155}]
+2023-12-16 11:51:18.977 INFO  5500 --- [http-nio-8001-exec-3] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未受理, 已派单, 已回复, 已归档], yAxisNameList=[155, 6, 0, 6]), code=200)，耗时(ms):899
+2023-12-16 11:53:34.375 INFO  5500 --- [http-nio-8001-exec-6] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND FAILURE_TIME BETWEEN to_date('2023-12-11 00:00:00','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-12-16 23:59:59','yyyy-mm-dd HH24:mi:ss')  AND WORK_ORDER_UNIT = '国网大连市金州新区供电公司',14ms
+2023-12-16 11:53:36.174 INFO  5500 --- [http-nio-8001-exec-6] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单状态XY轴数据：[{WORK_ORDER_STATUS=未受理, COUNTS=118}]
+2023-12-16 11:54:01.427 INFO  5500 --- [http-nio-8001-exec-6] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderCountByStatus()方法的入参为：[金州]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未受理, 已派单, 已回复, 已归档], yAxisNameList=[118, 0, 0, 0]), code=200)，耗时(ms):909
+2023-12-16 13:33:27.490 INFO  10300 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 13:33:27.497 INFO  10300 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 10300 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 13:33:27.498 DEBUG 10300 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 13:33:27.500 INFO  10300 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:33:30.364 INFO  10300 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 13:33:30.382 INFO  10300 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 13:33:30.383 INFO  10300 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 13:33:30.384 INFO  10300 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 13:33:30.707 INFO  10300 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 13:33:30.707 INFO  10300 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3060 ms
+2023-12-16 13:33:33.415 INFO  10300 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 13:33:33.482 INFO  10300 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 13:33:33.501 INFO  10300 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.161 seconds (JVM running for 14.41)
+2023-12-16 13:33:54.166 INFO  10300 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 13:33:54.167 INFO  10300 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 13:33:54.168 INFO  10300 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-16 13:33:54.203 WARN  10300 --- [http-nio-8001-exec-1] org.springframework.web.servlet.PageNotFound - No mapping for GET /worker_order/aro_xy_counts
+2023-12-16 13:34:39.697 INFO  10300 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 13:34:40.479 INFO  10300 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 13:34:40.492 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND (app_status = ? OR app_status = ?) AND failure_time BETWEEN ? AND ?
+2023-12-16 13:34:40.869 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已派单(String), 已接单(String), 已推送(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:34:41.041 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:34:41.047 INFO  10300 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已派单' AND (app_status = '已接单' OR app_status = '已推送') AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,177ms
+2023-12-16 13:34:41.062 INFO  10300 --- [http-nio-8001-exec-2] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已接单数量：0
+2023-12-16 13:34:41.063 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND failure_time BETWEEN ? AND ?
+2023-12-16 13:34:41.064 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已回复(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:34:41.085 DEBUG 10300 --- [http-nio-8001-exec-2] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:34:41.085 INFO  10300 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已回复' AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,21ms
+2023-12-16 13:34:41.098 INFO  10300 --- [http-nio-8001-exec-2] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已完成数量：0
+2023-12-16 13:34:41.100 INFO  10300 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 已完成], yAxisNameList=[0, 0, 0]), code=200)，耗时(ms):503
+2023-12-16 13:42:28.428 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@2acf5a34 (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:33.446 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@32965249 (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:38.599 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@42126f96 (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:43.616 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@62af3e8b (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:43.638 WARN  10300 --- [http-nio-8001-exec-4] o.s.jdbc.support.SQLErrorCodesFactory - Error while extracting database name
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10033ms.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102)
+	at org.mybatis.spring.MyBatisExceptionTranslator.lambda$new$0(MyBatisExceptionTranslator.java:55)
+	at org.mybatis.spring.MyBatisExceptionTranslator.initExceptionTranslator(MyBatisExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:89)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at com.sun.proxy.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy88.selectObjectListByQuery(Unknown Source)
+	at com.mybatisflex.core.BaseMapper.selectCountByQuery(BaseMapper.java:633)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at org.apache.ibatis.binding.MapperProxy$DefaultMethodInvoker.invoke(MapperProxy.java:155)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy88.selectCountByQuery(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.mybatisflex.core.mybatis.MapperInvocationHandler.invoke(MapperInvocationHandler.java:75)
+	at com.sun.proxy.$Proxy88.selectCountByQuery(Unknown Source)
+	at com.pg.screen.dao.ActiveRepairOrderDao.selectCountByStatus(ActiveRepairOrderDao.java:72)
+	at com.pg.screen.dao.ActiveRepairOrderDao$$FastClassBySpringCGLIB$$6f0b48b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.pg.screen.dao.ActiveRepairOrderDao$$EnhancerBySpringCGLIB$$ce6e6fba.selectCountByStatus(<generated>)
+	at com.pg.screen.service.ActiveRepairOrderService.getCountByStatus(ActiveRepairOrderService.java:43)
+	at com.pg.screen.controller.WorkerOrderController.getActiveRepairOrderCountByStatus(WorkerOrderController.java:122)
+	at com.pg.screen.controller.WorkerOrderController$$FastClassBySpringCGLIB$$9bd48c12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.pg.screen.common.AspectControllerTimeConsuming.doAround(AspectControllerTimeConsuming.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.pg.screen.controller.WorkerOrderController$$EnhancerBySpringCGLIB$$b29e5df.getActiveRepairOrderCountByStatus(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.pg.screen.config.CorsConfig.doFilter(CorsConfig.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10033ms.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:83)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	... 106 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10033ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:162)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at com.mybatisflex.core.datasource.FlexDataSource.getConnection(FlexDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	... 107 common frames omitted
+Caused by: java.sql.SQLRecoverableException: IO 错误: Invalid Operation, NOT Connected
+	at oracle.jdbc.driver.T4CConnection.doSetNetworkTimeout(T4CConnection.java:9307)
+	at oracle.jdbc.driver.PhysicalConnection.setNetworkTimeout(PhysicalConnection.java:9998)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:566)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:173)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:186)
+	... 113 common frames omitted
+Caused by: oracle.net.ns.NetException: Invalid Operation, NOT Connected
+	at oracle.net.nt.TcpNTAdapter.setOption(TcpNTAdapter.java:747)
+	at oracle.net.ns.NSProtocol.setOption(NSProtocol.java:725)
+	at oracle.net.ns.NSProtocol.setSocketReadTimeout(NSProtocol.java:1040)
+	at oracle.jdbc.driver.T4CConnection.doSetNetworkTimeout(T4CConnection.java:9304)
+	... 117 common frames omitted
+2023-12-16 13:42:48.652 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@3b315121 (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:53.665 WARN  10300 --- [http-nio-8001-exec-4] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@9087419 (IO 错误: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-12-16 13:42:53.673 WARN  10300 --- [http-nio-8001-exec-4] o.s.jdbc.support.SQLErrorCodesFactory - Error while extracting database name
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10018ms.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97)
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at com.sun.proxy.$Proxy75.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy88.selectObjectListByQuery(Unknown Source)
+	at com.mybatisflex.core.BaseMapper.selectCountByQuery(BaseMapper.java:633)
+	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+	at org.apache.ibatis.binding.MapperProxy$DefaultMethodInvoker.invoke(MapperProxy.java:155)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy88.selectCountByQuery(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.mybatisflex.core.mybatis.MapperInvocationHandler.invoke(MapperInvocationHandler.java:75)
+	at com.sun.proxy.$Proxy88.selectCountByQuery(Unknown Source)
+	at com.pg.screen.dao.ActiveRepairOrderDao.selectCountByStatus(ActiveRepairOrderDao.java:72)
+	at com.pg.screen.dao.ActiveRepairOrderDao$$FastClassBySpringCGLIB$$6f0b48b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.pg.screen.dao.ActiveRepairOrderDao$$EnhancerBySpringCGLIB$$ce6e6fba.selectCountByStatus(<generated>)
+	at com.pg.screen.service.ActiveRepairOrderService.getCountByStatus(ActiveRepairOrderService.java:43)
+	at com.pg.screen.controller.WorkerOrderController.getActiveRepairOrderCountByStatus(WorkerOrderController.java:122)
+	at com.pg.screen.controller.WorkerOrderController$$FastClassBySpringCGLIB$$9bd48c12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.pg.screen.common.AspectControllerTimeConsuming.doAround(AspectControllerTimeConsuming.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.pg.screen.controller.WorkerOrderController$$EnhancerBySpringCGLIB$$b29e5df.getActiveRepairOrderCountByStatus(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.pg.screen.config.CorsConfig.doFilter(CorsConfig.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10018ms.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:83)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337)
+	... 106 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 10018ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:162)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at com.mybatisflex.core.datasource.FlexDataSource.getConnection(FlexDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	... 107 common frames omitted
+Caused by: java.sql.SQLRecoverableException: IO 错误: Invalid Operation, NOT Connected
+	at oracle.jdbc.driver.T4CConnection.doSetNetworkTimeout(T4CConnection.java:9307)
+	at oracle.jdbc.driver.PhysicalConnection.setNetworkTimeout(PhysicalConnection.java:9998)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:566)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:173)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:186)
+	... 113 common frames omitted
+Caused by: oracle.net.ns.NetException: Invalid Operation, NOT Connected
+	at oracle.net.nt.TcpNTAdapter.setOption(TcpNTAdapter.java:747)
+	at oracle.net.ns.NSProtocol.setOption(NSProtocol.java:725)
+	at oracle.net.ns.NSProtocol.setSocketReadTimeout(NSProtocol.java:1040)
+	at oracle.jdbc.driver.T4CConnection.doSetNetworkTimeout(T4CConnection.java:9304)
+	... 117 common frames omitted
+2023-12-16 13:43:12.140 INFO  2580 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 13:43:12.147 INFO  2580 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 2580 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 13:43:12.153 DEBUG 2580 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 13:43:12.154 INFO  2580 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:43:14.938 INFO  2580 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 13:43:14.959 INFO  2580 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 13:43:14.961 INFO  2580 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 13:43:14.961 INFO  2580 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 13:43:15.305 INFO  2580 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 13:43:15.306 INFO  2580 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3009 ms
+2023-12-16 13:43:17.968 INFO  2580 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 13:43:18.033 INFO  2580 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 13:43:18.053 INFO  2580 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.056 seconds (JVM running for 14.374)
+2023-12-16 13:43:25.983 INFO  2580 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 13:43:25.983 INFO  2580 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 13:43:25.984 INFO  2580 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-16 13:43:26.202 INFO  2580 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 13:43:26.945 INFO  2580 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 13:43:26.958 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND (app_status = ? OR app_status = ?) AND failure_time BETWEEN ? AND ?
+2023-12-16 13:43:27.294 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已派单(String), 已接单(String), 已推送(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:43:27.459 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:43:27.465 INFO  2580 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已派单' AND (app_status = '已接单' OR app_status = '已推送') AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,168ms
+2023-12-16 13:43:27.483 INFO  2580 --- [http-nio-8001-exec-1] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已接单数量：4
+2023-12-16 13:43:27.484 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND failure_time BETWEEN ? AND ?
+2023-12-16 13:43:27.485 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已回复(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:43:27.495 DEBUG 2580 --- [http-nio-8001-exec-1] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:43:27.495 INFO  2580 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已回复' AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,10ms
+2023-12-16 13:43:27.502 INFO  2580 --- [http-nio-8001-exec-1] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已完成数量：4
+2023-12-16 13:43:27.508 INFO  2580 --- [http-nio-8001-exec-1] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 已完成], yAxisNameList=[0, 4, 4]), code=200)，耗时(ms):442
+2023-12-16 13:45:41.469 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND (app_status = ? OR app_status = ?) AND failure_time BETWEEN ? AND ?
+2023-12-16 13:45:41.470 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已派单(String), 已接单(String), 已推送(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:45:41.508 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:45:41.509 INFO  2580 --- [http-nio-8001-exec-3] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已派单' AND (app_status = '已接单' OR app_status = '已推送') AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,38ms
+2023-12-16 13:45:41.528 INFO  2580 --- [http-nio-8001-exec-3] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已接单数量：7
+2023-12-16 13:45:41.529 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = ? AND failure_time BETWEEN ? AND ?
+2023-12-16 13:45:41.530 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 已回复(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 13:45:41.540 DEBUG 2580 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-16 13:45:41.541 INFO  2580 --- [http-nio-8001-exec-3] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_REPAIR_ORDER WHERE work_order_status = '已回复' AND failure_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,10ms
+2023-12-16 13:45:41.548 INFO  2580 --- [http-nio-8001-exec-3] com.pg.screen.service.ActiveRepairOrderService - 主动检修-已完成数量：4
+2023-12-16 13:45:41.549 INFO  2580 --- [http-nio-8001-exec-3] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 已完成], yAxisNameList=[0, 7, 4]), code=200)，耗时(ms):97
+2023-12-16 14:20:26.648 INFO  12588 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 14:20:26.665 INFO  12588 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 12588 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 14:20:26.666 DEBUG 12588 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 14:20:26.668 INFO  12588 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 14:20:29.474 INFO  12588 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 14:20:29.494 INFO  12588 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 14:20:29.495 INFO  12588 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 14:20:29.496 INFO  12588 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 14:20:29.811 INFO  12588 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 14:20:29.812 INFO  12588 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3001 ms
+2023-12-16 14:20:32.595 INFO  12588 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 14:20:32.662 INFO  12588 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 14:20:32.682 INFO  12588 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.255 seconds (JVM running for 14.582)
+2023-12-16 14:20:40.874 INFO  12588 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 14:20:40.875 INFO  12588 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 14:20:40.877 INFO  12588 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-12-16 14:20:41.066 INFO  12588 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 14:20:41.899 INFO  12588 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 14:20:41.916 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 14:20:42.315 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 未接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 14:20:42.473 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 14:20:42.478 INFO  12588 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = '未接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,161ms
+2023-12-16 14:20:42.777 INFO  12588 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-未接单数量：2
+2023-12-16 14:20:42.777 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 14:20:42.778 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 已接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 14:20:42.804 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 14:20:42.805 INFO  12588 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '已接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,26ms
+2023-12-16 14:20:43.394 INFO  12588 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已接单数量：2
+2023-12-16 14:20:43.395 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 14:20:43.396 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 到达现场(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 14:20:43.707 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 14:20:43.708 INFO  12588 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '到达现场' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,312ms
+2023-12-16 14:20:44.026 INFO  12588 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-巡视中数量：1
+2023-12-16 14:20:44.027 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 14:20:44.028 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已处理(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 14:20:44.319 DEBUG 12588 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 14:20:44.320 INFO  12588 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已处理' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,292ms
+2023-12-16 14:20:44.626 INFO  12588 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已完成数量：7
+2023-12-16 14:20:44.636 INFO  12588 --- [http-nio-8001-exec-1] com.pg.screen.common.AspectControllerTimeConsuming - getCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 巡视中, 已完成], yAxisNameList=[2, 2, 1, 7]), code=200)，耗时(ms):661
+2023-12-16 15:38:14.931 INFO  14180 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 15:38:14.949 INFO  14180 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 14180 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 15:38:14.951 DEBUG 14180 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 15:38:14.952 INFO  14180 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 15:38:18.016 INFO  14180 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 15:38:18.042 INFO  14180 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 15:38:18.044 INFO  14180 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 15:38:18.045 INFO  14180 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 15:38:18.360 INFO  14180 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 15:38:18.361 INFO  14180 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3263 ms
+2023-12-16 15:38:21.031 INFO  14180 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 15:38:21.103 INFO  14180 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 15:38:21.125 INFO  14180 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.345 seconds (JVM running for 14.647)
+2023-12-16 15:38:31.968 INFO  14180 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 15:38:31.968 INFO  14180 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 15:38:31.969 INFO  14180 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-16 15:38:32.145 INFO  14180 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 15:38:33.034 INFO  14180 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 15:38:33.049 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 15:38:33.368 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 未接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 15:38:33.537 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 15:38:33.543 INFO  14180 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = '未接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,173ms
+2023-12-16 15:38:33.562 INFO  14180 --- [http-nio-8001-exec-2] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-未接单数量：2
+2023-12-16 15:38:33.563 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 15:38:33.563 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 已接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 15:38:33.603 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 15:38:33.604 INFO  14180 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '已接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,41ms
+2023-12-16 15:38:33.625 INFO  14180 --- [http-nio-8001-exec-2] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已接单数量：2
+2023-12-16 15:38:33.625 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 15:38:33.626 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 到达现场(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 15:38:33.656 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 15:38:33.657 INFO  14180 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '到达现场' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,31ms
+2023-12-16 15:38:33.668 INFO  14180 --- [http-nio-8001-exec-2] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-巡视中数量：1
+2023-12-16 15:38:33.669 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 15:38:33.670 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已处理(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 15:38:33.678 DEBUG 14180 --- [http-nio-8001-exec-2] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 15:38:33.679 INFO  14180 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已处理' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,8ms
+2023-12-16 15:38:33.687 INFO  14180 --- [http-nio-8001-exec-2] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已完成数量：7
+2023-12-16 15:38:33.691 INFO  14180 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 巡视中, 已完成], yAxisNameList=[2, 2, 1, 7]), code=200)，耗时(ms):641
+2023-12-16 16:27:51.027 INFO  7316 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 16:27:51.038 INFO  7316 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 7316 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 16:27:51.039 DEBUG 7316 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 16:27:51.041 INFO  7316 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 16:27:53.920 INFO  7316 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 16:27:53.940 INFO  7316 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 16:27:53.941 INFO  7316 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 16:27:53.942 INFO  7316 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 16:27:54.253 INFO  7316 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 16:27:54.254 INFO  7316 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3076 ms
+2023-12-16 16:27:56.954 INFO  7316 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 16:27:57.025 INFO  7316 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 16:27:57.050 INFO  7316 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.252 seconds (JVM running for 14.93)
+2023-12-16 16:28:29.151 INFO  7316 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 16:28:29.152 INFO  7316 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 16:28:29.154 INFO  7316 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-12-16 16:28:29.395 INFO  7316 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 16:28:30.395 INFO  7316 --- [http-nio-8001-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 16:28:30.407 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 16:28:30.797 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 未接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:28:30.963 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:28:30.968 INFO  7316 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE app_status = '未接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,169ms
+2023-12-16 16:28:30.982 INFO  7316 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-未接单数量：2
+2023-12-16 16:28:30.983 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 16:28:30.983 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 已接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:28:31.038 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:28:31.039 INFO  7316 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '已接单' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,55ms
+2023-12-16 16:28:31.062 INFO  7316 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已接单数量：2
+2023-12-16 16:28:31.063 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND app_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 16:28:31.064 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已接单(String), 到达现场(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:28:31.092 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:28:31.093 INFO  7316 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已接单' AND app_status = '到达现场' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,29ms
+2023-12-16 16:28:31.115 INFO  7316 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-巡视中数量：1
+2023-12-16 16:28:31.116 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = ? AND inspection_completion_time BETWEEN ? AND ?
+2023-12-16 16:28:31.116 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - ==> Parameters: 已处理(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:28:31.128 DEBUG 7316 --- [http-nio-8001-exec-1] c.p.s.m.O.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:28:31.129 INFO  7316 --- [http-nio-8001-exec-1] mybatis-flex-sql - SELECT COUNT(*) FROM OPERATION_MAINTENANCE_ORDER WHERE task_status = '已处理' AND inspection_completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,12ms
+2023-12-16 16:28:31.140 INFO  7316 --- [http-nio-8001-exec-1] c.p.s.service.OperationMaintenanceOrderService - 运维工单Y轴-已完成数量：7
+2023-12-16 16:28:31.145 INFO  7316 --- [http-nio-8001-exec-1] com.pg.screen.common.AspectControllerTimeConsuming - getCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 巡视中, 已完成], yAxisNameList=[2, 2, 1, 7]), code=200)，耗时(ms):892
+2023-12-16 16:29:28.944 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = ? AND appzt = ? AND slsj BETWEEN ? AND ?
+2023-12-16 16:29:28.946 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已派单(String), 已接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:29:29.062 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:29:29.062 INFO  7316 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = '已派单' AND appzt = '已接单' AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,117ms
+2023-12-16 16:29:29.070 INFO  7316 --- [http-nio-8001-exec-4] com.pg.screen.service.RepairsOrderService - 报修状态工单数-已接单数量：7
+2023-12-16 16:29:29.071 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = ? AND ddxcscfz IS NULL AND slsj BETWEEN ? AND ?
+2023-12-16 16:29:29.072 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已派单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:29:29.134 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:29:29.135 INFO  7316 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = '已派单' AND ddxcscfz IS NULL  AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,62ms
+2023-12-16 16:29:29.142 INFO  7316 --- [http-nio-8001-exec-4] com.pg.screen.service.RepairsOrderService - 报修状态工单数-抢修中数量：5
+2023-12-16 16:29:29.144 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE (gdzt = ? OR appzt = ?) AND slsj BETWEEN ? AND ?
+2023-12-16 16:29:29.145 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已归档(String), 已完成 (String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:29:29.202 DEBUG 7316 --- [http-nio-8001-exec-4] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:29:29.202 INFO  7316 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE (gdzt = '已归档' OR appzt = '已完成 ') AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,57ms
+2023-12-16 16:29:29.222 INFO  7316 --- [http-nio-8001-exec-4] com.pg.screen.service.RepairsOrderService - 报修状态工单数-已完成数量：420
+2023-12-16 16:29:29.222 INFO  7316 --- [http-nio-8001-exec-4] com.pg.screen.common.AspectControllerTimeConsuming - getRepairsCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 抢修中, 已完成], yAxisNameList=[0, 7, 5, 420]), code=200)，耗时(ms):300
+2023-12-16 16:30:13.366 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = ? AND appzt = ? AND slsj BETWEEN ? AND ?
+2023-12-16 16:30:13.367 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已派单(String), 已接单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:30:13.423 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:30:13.423 INFO  7316 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = '已派单' AND appzt = '已接单' AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,56ms
+2023-12-16 16:30:13.430 INFO  7316 --- [http-nio-8001-exec-2] com.pg.screen.service.RepairsOrderService - 报修状态工单数-已接单数量：7
+2023-12-16 16:30:13.431 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = ? AND ddxcscfz IS NULL AND slsj BETWEEN ? AND ?
+2023-12-16 16:30:13.432 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已派单(String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:30:13.485 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:30:13.486 INFO  7316 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE gdzt = '已派单' AND ddxcscfz IS NULL  AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,53ms
+2023-12-16 16:30:13.493 INFO  7316 --- [http-nio-8001-exec-2] com.pg.screen.service.RepairsOrderService - 报修状态工单数-抢修中数量：5
+2023-12-16 16:30:13.494 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM GZGD95598 WHERE (gdzt = ? OR appzt = ?) AND slsj BETWEEN ? AND ?
+2023-12-16 16:30:13.494 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - ==> Parameters: 已归档(String), 已完成 (String), 2023-12-11T00:00(LocalDateTime), 2023-12-16T23:59:59(LocalDateTime)
+2023-12-16 16:30:13.551 DEBUG 7316 --- [http-nio-8001-exec-2] c.p.s.m.Gzgd95598Mapper.selectObjectListByQuery - <==      Total: 1
+2023-12-16 16:30:13.552 INFO  7316 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT COUNT(*) FROM GZGD95598 WHERE (gdzt = '已归档' OR appzt = '已完成 ') AND slsj BETWEEN  '2023-12-11 00:00:00' AND '2023-12-16 23:59:59' ,57ms
+2023-12-16 16:30:13.559 INFO  7316 --- [http-nio-8001-exec-2] com.pg.screen.service.RepairsOrderService - 报修状态工单数-已完成数量：420
+2023-12-16 16:30:13.559 INFO  7316 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getRepairsCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未接单, 已接单, 抢修中, 已完成], yAxisNameList=[0, 7, 5, 420]), code=200)，耗时(ms):220
+2023-12-16 17:23:14.126 INFO  6848 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Starting PowerGridScreenApplicationTests using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 6848 (started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 17:23:14.128 DEBUG 6848 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 17:23:14.130 INFO  6848 --- [main] com.pg.screen.PowerGridScreenApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 17:23:14.137 INFO  6848 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 17:23:28.936 INFO  6848 --- [main] com.pg.screen.PowerGridScreenApplicationTests - Started PowerGridScreenApplicationTests in 15.984 seconds (JVM running for 18.809)
+2023-12-16 17:30:00.490 INFO  8728 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-16 17:30:00.509 INFO  8728 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 8728 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-16 17:30:00.520 DEBUG 8728 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-16 17:30:00.521 INFO  8728 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-16 17:30:05.973 INFO  8728 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-16 17:30:06.009 INFO  8728 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-16 17:30:06.012 INFO  8728 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-16 17:30:06.016 INFO  8728 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-16 17:30:06.827 INFO  8728 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-16 17:30:06.827 INFO  8728 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6050 ms
+2023-12-16 17:30:12.688 INFO  8728 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-16 17:30:12.823 INFO  8728 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-16 17:30:12.855 INFO  8728 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 14.583 seconds (JVM running for 27.386)
+2023-12-16 17:30:28.191 INFO  8728 --- [http-nio-8001-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 17:30:28.192 INFO  8728 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-16 17:30:28.194 INFO  8728 --- [http-nio-8001-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-16 17:30:31.778 INFO  8728 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-16 17:30:33.338 INFO  8728 --- [http-nio-8001-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-16 17:30:34.348 INFO  8728 --- [http-nio-8001-exec-2] mybatis-flex-sql - SELECT DISTINCT WORK_ORDER_STATUS,            COUNT(*) OVER (PARTITION BY WORK_ORDER_STATUS) AS COUNTS      FROM ACTIVE_RUSH_REPAIR_ORDER      WHERE WORK_ORDER_STATUS IN ('未受理','已派单','已回复','已归档')            AND FAILURE_TIME BETWEEN to_date('2023-12-11 00:00:00','yyyy-mm-dd HH24:mi:ss')            AND to_date('2023-12-16 23:59:59','yyyy-mm-dd HH24:mi:ss') ,723ms
+2023-12-16 17:30:34.361 INFO  8728 --- [http-nio-8001-exec-2] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单状态XY轴数据：[{WORK_ORDER_STATUS=已归档, COUNTS=6}, {WORK_ORDER_STATUS=已派单, COUNTS=6}, {WORK_ORDER_STATUS=未受理, COUNTS=155}]
+2023-12-16 17:30:34.366 INFO  8728 --- [http-nio-8001-exec-2] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderCountByStatus()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=XyDataCountVo(xAxisNameList=[未受理, 已派单, 已回复, 已归档], yAxisNameList=[155, 6, 0, 6]), code=200)，耗时(ms):60

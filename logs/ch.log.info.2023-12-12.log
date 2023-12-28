@@ -1,0 +1,39 @@
+2023-12-12 20:53:18.999 INFO  12088 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-12-12 20:53:19.008 INFO  12088 --- [main] com.pg.screen.PowerGridScreenApplication - Starting PowerGridScreenApplication using Java 1.8.0_92 on DESKTOP-J7GIHP0 with PID 12088 (G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe\target\classes started by 12578 in G:\project\parttime\visualLargeScreenServe\visualLargeScreenServe)
+2023-12-12 20:53:19.009 DEBUG 12088 --- [main] com.pg.screen.PowerGridScreenApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-12-12 20:53:19.011 INFO  12088 --- [main] com.pg.screen.PowerGridScreenApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-12 20:53:22.027 INFO  12088 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-12-12 20:53:22.054 INFO  12088 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-12-12 20:53:22.059 INFO  12088 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-12 20:53:22.060 INFO  12088 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-12-12 20:53:22.372 INFO  12088 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-12 20:53:22.375 INFO  12088 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3159 ms
+2023-12-12 20:53:25.102 INFO  12088 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-12-12 20:53:25.171 INFO  12088 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-12-12 20:53:25.189 INFO  12088 --- [main] com.pg.screen.PowerGridScreenApplication - Started PowerGridScreenApplication in 7.479 seconds (JVM running for 22.654)
+2023-12-12 20:56:39.265 INFO  12088 --- [http-nio-8001-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12 20:56:39.266 INFO  12088 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-12 20:56:39.268 INFO  12088 --- [http-nio-8001-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-12-12 20:58:51.906 INFO  12088 --- [http-nio-8001-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-12-12 20:59:03.970 INFO  12088 --- [http-nio-8001-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-12-12 20:59:04.046 DEBUG 12088 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN ? AND ?
+2023-12-12 20:59:05.391 DEBUG 12088 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 2023-12-11T00:00(LocalDateTime), 2023-12-12T23:59:59(LocalDateTime)
+2023-12-12 20:59:06.129 DEBUG 12088 --- [http-nio-8001-exec-3] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-12 20:59:06.141 INFO  12088 --- [http-nio-8001-exec-3] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-12 23:59:59' ,745ms
+2023-12-12 20:59:49.959 INFO  12088 --- [http-nio-8001-exec-3] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单总数：0
+2023-12-12 20:59:49.959 WARN  12088 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s881ms604µs200ns).
+2023-12-12 20:59:49.961 INFO  12088 --- [http-nio-8001-exec-3] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderTotal()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=0, code=200)，耗时(ms):870
+2023-12-12 21:00:29.872 DEBUG 12088 --- [http-nio-8001-exec-4] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN ? AND ?
+2023-12-12 21:00:29.873 DEBUG 12088 --- [http-nio-8001-exec-4] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 2023-12-11T00:00(LocalDateTime), 2023-12-12T23:59:59(LocalDateTime)
+2023-12-12 21:00:29.909 DEBUG 12088 --- [http-nio-8001-exec-4] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-12 21:00:29.910 INFO  12088 --- [http-nio-8001-exec-4] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-12 23:59:59' ,37ms
+2023-12-12 21:00:29.948 INFO  12088 --- [http-nio-8001-exec-4] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单总数：0
+2023-12-12 21:00:29.950 INFO  12088 --- [http-nio-8001-exec-4] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderTotal()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=0, code=200)，耗时(ms):376
+2023-12-12 21:01:10.806 DEBUG 12088 --- [http-nio-8001-exec-5] c.p.s.m.A.selectObjectListByQuery - ==>  Preparing: SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN ? AND ?
+2023-12-12 21:01:10.809 DEBUG 12088 --- [http-nio-8001-exec-5] c.p.s.m.A.selectObjectListByQuery - ==> Parameters: 2023-12-11T00:00(LocalDateTime), 2023-12-12T23:59:59(LocalDateTime)
+2023-12-12 21:01:10.824 DEBUG 12088 --- [http-nio-8001-exec-5] c.p.s.m.A.selectObjectListByQuery - <==      Total: 1
+2023-12-12 21:01:10.825 INFO  12088 --- [http-nio-8001-exec-5] mybatis-flex-sql - SELECT COUNT(*) FROM ACTIVE_RUSH_REPAIR_ORDER WHERE completion_time BETWEEN  '2023-12-11 00:00:00' AND '2023-12-12 23:59:59' ,17ms
+2023-12-12 21:01:10.871 INFO  12088 --- [http-nio-8001-exec-5] com.pg.screen.service.ActiveRushRepairOrderService - 主动抢修工单总数：0
+2023-12-12 21:01:10.872 INFO  12088 --- [http-nio-8001-exec-5] com.pg.screen.common.AspectControllerTimeConsuming - getActiveRushRepairOrderTotal()方法的入参为：[null]，返回值为：HttpResult(success=true, message=ok, data=0, code=200)，耗时(ms):631
+2023-12-12 21:10:35.664 WARN  12088 --- [http-nio-8001-exec-7] org.springframework.web.servlet.PageNotFound - No mapping for GET /worker_order/arro_total/workOrderUnit=1
+2023-12-12 21:10:45.580 WARN  12088 --- [http-nio-8001-exec-8] org.springframework.web.servlet.PageNotFound - No mapping for GET /worker_order/arro_total/workOrderUnit=1
