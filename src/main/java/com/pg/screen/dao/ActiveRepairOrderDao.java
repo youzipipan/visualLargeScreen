@@ -47,7 +47,7 @@ public class ActiveRepairOrderDao {
     /**
      * 根据状态查询主动检修工单数
      *
-     * @param status        1已接单 2已完成
+     * @param status        1已接单 2已完成 3未接单
      * @param workOrderUnit 工单单位
      * @return 主动检修工单数
      */
@@ -62,6 +62,8 @@ public class ActiveRepairOrderDao {
                     );
         } else if (status == 2) {
             queryWrapper.where(ACTIVE_REPAIR_ORDER.WORK_ORDER_STATUS.eq("已回复"));
+        } else if (status == 3) {
+            queryWrapper.where(ACTIVE_REPAIR_ORDER.WORK_ORDER_STATUS.eq("未受理"));
         } else {
             throw new RuntimeException("ActiveRepairOrder-SQL-status-error");
         }

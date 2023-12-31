@@ -5,8 +5,6 @@ import com.mybatisflex.core.row.Row;
 import com.pg.screen.utils.TimeInterval;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
-import java.time.temporal.WeekFields;
 import java.util.List;
 
 /**
@@ -25,20 +23,32 @@ public class WorkOrderDistributionDao {
      *
      * @return 主动检修工单分布数量
      */
-    public List<Row> selectWorkOrderDistributionByUnit(String tableName) {
+    public List<Row> selectWorkOrderDistributionByUnit(String tableName, String yearBegin, String yearEnd) {
+
         String where;
-        final TimeInterval timeInterval = TimeInterval.createOnMonday();
-        if ("OPERATION_MAINTENANCE_ORDER".equals(tableName)) {
-            where = " WHERE INSPECTION_COMPLETION_TIME BETWEEN to_date('" + timeInterval.beginDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') " +
-                    "AND to_date('" + timeInterval.endDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') ";
+        if ("GZGD95598".equals(tableName)) {
+            where = " WHERE SLSJ BETWEEN to_date('" + yearBegin + "','yyyy-MM-dd') " +
+                    "AND to_date('" + yearEnd + "','yyyy-MM-dd')";
+        } else if("INSPECTION_HISTORY_CONTROL".equals(tableName)){
+            where = " WHERE INSPECTION_COMPLETION_TIME BETWEEN to_date('" + yearBegin + "','yyyy-MM-dd') " +
+                    "AND to_date('" + yearEnd + "','yyyy-MM-dd')";
         } else {
-            where = " WHERE COMPLETION_TIME BETWEEN to_date('" + timeInterval.beginDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss') " +
-                    "AND to_date('" + timeInterval.endDateFormat("yyyy-MM-dd HH:mm:ss") + "','yyyy-mm-dd HH24:mi:ss')";
+            where = " WHERE FAILURE_TIME BETWEEN to_date('" + yearBegin + "','yyyy-MM-dd') " +
+                    "AND to_date('" + yearEnd + "','yyyy-MM-dd')";
         }
-        String sql = " SELECT " +
-                "DISTINCT WORK_ORDER_UNIT, " +
-                "COUNT(*) OVER (PARTITION BY WORK_ORDER_UNIT) AS COUNTS " +
-                "FROM " + tableName + where;
+        String sql;
+        if("GZGD95598".equals(tableName)){
+            sql = " SELECT " +
+                    "DISTINCT GDDW AS WORK_ORDER_UNIT, " +
+                    "COUNT(*) OVER (PARTITION BY GDDW) AS COUNTS " +
+                    "FROM " + tableName + where;
+        }else{
+            sql = " SELECT " +
+                    "DISTINCT WORK_ORDER_UNIT, " +
+                    "COUNT(*) OVER (PARTITION BY WORK_ORDER_UNIT) AS COUNTS " +
+                    "FROM " + tableName + where;
+        }
+
         return Db.selectListBySql(sql);
     }
 

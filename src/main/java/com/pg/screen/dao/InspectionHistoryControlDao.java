@@ -4,6 +4,8 @@ import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.core.row.Db;
 import com.mybatisflex.core.row.Row;
 import com.pg.screen.mapper.InspectionHistoryControlMapper;
+import com.pg.screen.utils.TimeInterval;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -13,6 +15,7 @@ import java.util.List;
 import static com.mybatisflex.core.query.QueryMethods.count;
 import static com.mybatisflex.core.query.QueryMethods.distinct;
 import static com.pg.screen.mapper.entity.table.InspectionHistoryControlTableDef.INSPECTION_HISTORY_CONTROL;
+import static com.pg.screen.mapper.entity.table.OperationMaintenanceOrderTableDef.OPERATION_MAINTENANCE_ORDER;
 
 /**
  * 巡视历史管控 dao
@@ -81,4 +84,19 @@ public class InspectionHistoryControlDao {
         return Db.selectListByQuery(queryWrapper);
     }
 
+    /**
+     *  运维工单总数
+     * @param workOrderUnit
+     * @return
+     */
+    public Long selectTotal(String workOrderUnit) {
+        QueryWrapper queryWrapper = QueryWrapper.create();
+        final TimeInterval timeInterval = TimeInterval.createOnMonday();
+        queryWrapper.where(
+                INSPECTION_HISTORY_CONTROL.INSPECTION_COMPLETION_TIME.between(timeInterval.getBeginDateTime(), timeInterval.getEndDateTime()));
+        if (StringUtils.isNotBlank(workOrderUnit)) {
+            queryWrapper.and(INSPECTION_HISTORY_CONTROL.WORK_ORDER_UNIT.eq(workOrderUnit));
+        }
+        return inspectionHistoryControlMapper.selectCountByQuery(queryWrapper);
+    }
 }

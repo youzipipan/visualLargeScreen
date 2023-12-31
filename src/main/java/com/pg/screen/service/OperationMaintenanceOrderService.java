@@ -1,6 +1,7 @@
 package com.pg.screen.service;
 
 import com.pg.screen.common.HttpResult;
+import com.pg.screen.dao.InspectionHistoryControlDao;
 import com.pg.screen.dao.OperationMaintenanceOrderDao;
 import com.pg.screen.model.vo.XyDataCountVo;
 import javax.annotation.Resource;
@@ -21,6 +22,8 @@ public class OperationMaintenanceOrderService {
 
     @Resource
     private OperationMaintenanceOrderDao operationMaintenanceOrderDao;
+    @Resource
+    private InspectionHistoryControlDao inspectionHistoryControlDao;
 
     /**
      * 获取运维工单总数
@@ -28,7 +31,8 @@ public class OperationMaintenanceOrderService {
      * @return 运维工单总数
      */
     public HttpResult<Long> getTotal(String workOrderUnit) {
-        Long count = operationMaintenanceOrderDao.selectTotal(workOrderUnit);
+        //Long count = operationMaintenanceOrderDao.selectTotal(workOrderUnit);
+        Long count = inspectionHistoryControlDao.selectTotal(workOrderUnit);
         log.info("运维工单总数：{}", count);
         return new HttpResult<Long>().success(count);
     }
@@ -46,7 +50,7 @@ public class OperationMaintenanceOrderService {
         Long patrolCount = operationMaintenanceOrderDao.selectCountByStatus(2,workOrderUnit);
         log.info("运维工单Y轴-巡视中数量：{}", patrolCount);
         Long finishedCount = operationMaintenanceOrderDao.selectCountByStatus(3,workOrderUnit);*/
-        Long finishedCount = operationMaintenanceOrderDao.selectTotal(workOrderUnit);
+        Long finishedCount = inspectionHistoryControlDao.selectTotal(workOrderUnit);
         log.info("运维工单Y轴-已完成数量：{}", finishedCount);
         List<Long> yAxisNameList = new LinkedList<>();
         yAxisNameList.add(0L);
