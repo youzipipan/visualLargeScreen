@@ -274,6 +274,7 @@ public class FaultDetailService {
      */
     public HttpResult<XyDataBigDecimalVo> getLineFailureRateRanking(
             LocalDate beginDate, LocalDate endDate) {
+
         List<Row> rowList = faultDetailDao
                 .selectLineFailureRateRanking(beginDate, endDate);
         String name;
@@ -373,7 +374,11 @@ public class FaultDetailService {
                 WorkOrderUnitEnum.getShortName(), yAxisValuesList);
 //        vo.setTotal(total.divide(BigDecimal.valueOf(count), 4, RoundingMode.HALF_UP));
         //2023-11-06
-        vo.setTotal(total.divide(total_long, 4, RoundingMode.HALF_UP));
+        if(BigDecimal.ZERO.compareTo(total_long)==0){
+            vo.setTotal(BigDecimal.valueOf(0));
+        }else{
+            vo.setTotal(total.divide(total_long, 4, RoundingMode.HALF_UP));
+        }
         //总次数，除以总长度修改
         return new HttpResult<XyDataBigDecimalVo>().success(vo);
     }
